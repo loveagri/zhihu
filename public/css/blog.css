@@ -2,7 +2,7 @@
  * Globals
  */
 
-body {
+ body {
     font-family: Georgia, "Times New Roman", Times, serif;
     color: #555;
 }
@@ -24,9 +24,9 @@ h6, .h6 {
  * Override Bootstrap's default container.
  */
 
-@media (min-width: 1200px) {
-    .container {
-        width: 970px;
+ @media (min-width: 1200px) {
+    .container{
+        max-width: 1200px;
     }
 }
 
@@ -35,7 +35,7 @@ h6, .h6 {
  * Masthead for nav
  */
 
-.blog-masthead {
+ .blog-masthead {
     background-color: #428bca;
     -webkit-box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
     box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
@@ -78,7 +78,7 @@ h6, .h6 {
  * Blog name and description
  */
 
-.blog-header {
+ .blog-header {
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -98,7 +98,7 @@ h6, .h6 {
  * Main column and sidebar layout
  */
 
-.blog-main {
+ .blog-main {
     font-size: 18px;
     line-height: 1.5;
 }
@@ -137,8 +137,9 @@ h6, .h6 {
  * Blog posts
  */
 
-.blog-post {
+ .blog-post {
     margin-bottom: 60px;
+     min-height: 100%;
 }
 .blog-post-title {
     margin-bottom: 5px;
@@ -158,12 +159,14 @@ p {
  * Footer
  */
 
-.blog-footer {
+ .blog-footer {
     padding: 40px 0;
     color: #999;
     text-align: center;
     background-color: #f9f9f9;
     border-top: 1px solid #e5e5e5;
+    height: 145px;
+    margin-top: -145px;
 }
 .blog-footer p:last-child {
     margin-bottom: 0;
