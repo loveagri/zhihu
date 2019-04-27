@@ -3,17 +3,19 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use \App\Post;
 
 class PostController extends Controller
 {
     public function index()
     {
-        return view('post.index');
+        $posts = Post::orderBy('created_at','desc')->paginate(6);
+        return view('post.index',compact('posts'));
     }
 
-    public function show()
+    public function show(Post $post)
     {
-         return view('post.show');
+         return view('post.show',compact('post'));
     }
 
     public function create()
@@ -23,6 +25,19 @@ class PostController extends Controller
 
     public function store()
     {
+        $this->validate(request(),[
+            'title'=>'required|string|max:100|min:5',
+            'content'=>'required|string|min:5',
+        ]);
+        // $post = new Post();
+        // $post->title = request('title');
+        // $post->content = request('content');
+        // $post->save();
+
+        // $params = ['title'=>request('title'),'content'=>request('content')];
+        $post = Post::create(request(['title','content']));
+
+        return redirect('posts');
 
     }
 

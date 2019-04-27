@@ -17,6 +17,7 @@
     <link href="/css/bootstrap-reboot.min.css" rel="stylesheet">
     <link href="/css/bootstrap-grid.min.css" rel="stylesheet">
     <link href="/css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/css/wangEditor.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="/css/blog.css" rel="stylesheet">
@@ -26,7 +27,7 @@
 
 @include('layouts.nav')
 
-<div class="container my-3">
+<div class="container my-3" style="min-height: 100vh">
     <div class="row">
         @yield("content")
         @include("layouts.sidebar")

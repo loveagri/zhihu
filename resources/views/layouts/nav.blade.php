@@ -12,7 +12,7 @@
                 <a class="nav-link" href="#">首页 <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item mr-4">
-                <a class="nav-link" href="#">写文章</a>
+                <a class="nav-link" href="/posts/create">写文章</a>
               </li>
               <li class="nav-item mr-4">
                 <a class="nav-link" href="#">通知</a>
