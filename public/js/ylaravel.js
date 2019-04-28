@@ -1,5 +1,3 @@
-
-
 var editor = new wangEditor('#editor');
 
 var $textarea = $('#content');
