@@ -5,7 +5,7 @@ editor.customConfig.onchange = function (html) {
     // 监控变化，同步更新到 textarea
     $textarea.val(html)
 };
-
+editor.customConfig.uploadFileName = 'wangEditorFile';
 
 editor.customConfig.uploadImgServer = '/posts/image/upload';
 
