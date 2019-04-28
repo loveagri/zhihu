@@ -41,19 +41,29 @@ class PostController extends Controller
 
     }
 
-    public function edit()
+    public function edit(Post $post)
     {
-        return view('post.edit');
+        return view('post.edit',compact('post'));
     }
 
-    public function update()
+    public function update(Post $post)
     {
+        $this->validate(request(),[
+            'title'=>'required|string|max:100|min:5',
+            'content'=>'required|string|min:5',
+        ]);
 
+         $post->title = request('title');
+         $post->content = request('content');
+         $post->save();
+
+        return redirect("posts/{$post->id}");
     }
 
-    public function delete()
+    public function delete(Post $post)
     {
-
+        $post->delete();
+        return redirect('/posts');
     }
 
     public function imageUpload(Request $request)

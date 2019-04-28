@@ -10,4 +10,5 @@ editor.customConfig.uploadImgParams = {
     _token: $('meta[name="csrf-token"]').attr('content')
 };
 editor.create();
+editor.txt.html($textarea.val());
 $textarea.val(editor.txt.html());
