@@ -14,7 +14,7 @@
                 </a>
             </div>
              <small>{{$post->created_at->toFormattedDateString()}} by <a href="" >loveagri</a></small>
-            <p>{{$post->content}}</p>
+            <p>{!! $post->content !!}</p>
             <div>
                 <a href="/posts/{{$post->id}}/zan" class="btn btn-primary">赞</a>
             </div>

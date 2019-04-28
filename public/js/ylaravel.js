@@ -1,10 +1,25 @@
-// var editor = new wangEditor('content');
+var editor = new wangEditor('#editor');
 
-// editor.config.uploadImgUrl = '/posts/image/upload';
+var $textarea = $('#content');
+editor.customConfig.onchange = function (html) {
+    // 监控变化，同步更新到 textarea
+    $textarea.val(html)
+};
+
+
+editor.customConfig.uploadImgServer = '/posts/image/upload';
 
 // // 设置 headers（举例）
-// editor.config.uploadHeaders = {
-//     'X-CSRF-TOKEN' : $('meta[name="csrf-token"]').attr('content')
-// };
+editor.customConfig.uploadHeaders = {
+    'X-CSRF-TOKEN' : $('meta[name="csrf-token"]').attr('content'),
+    '_token' : $('meta[name="csrf-token"]').attr('content'),
+    'token' : $('meta[name="csrf-token"]').attr('content')
+};
 
-// editor.create();
+
+
+editor.create();
+
+
+// 初始化 textarea 的值
+$textarea.val(editor.txt.html());
