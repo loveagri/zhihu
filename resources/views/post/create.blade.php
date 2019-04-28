@@ -14,7 +14,7 @@
                 <textarea name="content" hidden id="content" style="height:400px;max-height:500px;" name="content"
                           class="form-control"></textarea>
             </div>
-            @include('layouts.error');
+            @include('layouts.error')
             <button type="submit" class="btn btn-primary">提交</button>
         </form>
     </div>

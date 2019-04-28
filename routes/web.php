@@ -11,6 +11,13 @@
 |
 */
 
+Route::get('/register', '\App\Http\Controllers\RegisterController@index');
+Route::post('/register', '\App\Http\Controllers\RegisterController@register');
+Route::get('/login', '\App\Http\Controllers\LoginController@index');
+Route::post('/login', '\App\Http\Controllers\LoginController@login');
+Route::get('/logout', '\App\Http\Controllers\LoginController@logout');
+Route::get('/user/me/setting', '\App\Http\Controllers\UserController@setting');
+Route::post('/user/me/setting', '\App\Http\Controllers\UserController@settingStore');
 
 Route::get('/posts', '\App\Http\Controllers\PostController@index');
 Route::get('/posts/create', '\App\Http\Controllers\PostController@create');

@@ -9,13 +9,13 @@ class PostController extends Controller
 {
     public function index()
     {
-        $posts = Post::orderBy('created_at','desc')->paginate(5);
-        return view('post.index',compact('posts'));
+        $posts = Post::orderBy('created_at', 'desc')->paginate(5);
+        return view('post.index', compact('posts'));
     }
 
     public function show(Post $post)
     {
-         return view('post.show',compact('post'));
+        return view('post.show', compact('post'));
     }
 
     public function create()
@@ -25,17 +25,18 @@ class PostController extends Controller
 
     public function store()
     {
-        $this->validate(request(),[
-            'title'=>'required|string|max:100|min:5',
-            'content'=>'required|string|min:5',
+        $this->validate(request(), [
+            'title' => 'required|string|max:100|min:5',
+            'content' => 'required|string|min:5',
         ]);
         // $post = new Post();
         // $post->title = request('title');
         // $post->content = request('content');
         // $post->save();
 
-        // $params = ['title'=>request('title'),'content'=>request('content')];
-        $post = Post::create(request(['title','content']));
+        $user_id = \Auth::id();
+        $params = array_merge(request(['title','content']),compact('user_id'));
+        $post = Post::create($params);
 
         return redirect('posts');
 
@@ -43,19 +44,19 @@ class PostController extends Controller
 
     public function edit(Post $post)
     {
-        return view('post.edit',compact('post'));
+        return view('post.edit', compact('post'));
     }
 
     public function update(Post $post)
     {
-        $this->validate(request(),[
-            'title'=>'required|string|max:100|min:5',
-            'content'=>'required|string|min:5',
+        $this->validate(request(), [
+            'title' => 'required|string|max:100|min:5',
+            'content' => 'required|string|min:5',
         ]);
 
-         $post->title = request('title');
-         $post->content = request('content');
-         $post->save();
+        $post->title = request('title');
+        $post->content = request('content');
+        $post->save();
 
         return redirect("posts/{$post->id}");
     }
@@ -70,19 +71,12 @@ class PostController extends Controller
     {
         $path = $request->file('wangEditorFile')->store(md5(time()));
         return [
-            'errno'=>0,
-            'data'=>[
-                asset('storage/'.$path)
+            'errno' => 0,
+            'data' => [
+                asset('storage/' . $path)
             ]
         ];
     }
-
-
-
-
-
-
-
 
 
 }
