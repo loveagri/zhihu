@@ -6,14 +6,18 @@
         <div class="card-body">
             <div class="d-flex align-items-center">
                 <h2 >{{$post->title}}</h2>
+                @can('update',$post)
                 <a  href="/posts/{{$post->id}}/edit">
                     <i class="fa fa-pencil" aria-hidden="true"></i>
                 </a>
+                @endcan
+                   @can('delete',$post)
                 <a  href="/posts/{{$post->id}}/delete">
                     <i class="fa fa-times" aria-hidden="true"></i>
                 </a>
+                   @endcan
             </div>
-             <small>{{$post->created_at->toFormattedDateString()}} by <a href="" >loveagri</a></small>
+             <small>{{$post->created_at->toFormattedDateString()}} by <a href="" >{{$post->user->name}}</a></small>
             <p>{!! $post->content !!}</p>
             <div>
                 <a href="/posts/{{$post->id}}/zan" class="btn btn-primary">赞</a>
@@ -41,7 +45,7 @@
 <div class="card-body">
     <form class="mt5">
       <div class="form-group">
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        <textarea class="form-control" name="content" rows="3"></textarea>
     </div>
     <button type="submit" class="btn btn-primary">发表评论</button>
 </form>

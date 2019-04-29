@@ -10,6 +10,7 @@ class PostController extends Controller
     public function index()
     {
         $posts = Post::orderBy('created_at', 'desc')->paginate(5);
+        // dd($posts);
         return view('post.index', compact('posts'));
     }
 
@@ -54,6 +55,8 @@ class PostController extends Controller
             'content' => 'required|string|min:5',
         ]);
 
+        $this->authorize('update',$post);
+
         $post->title = request('title');
         $post->content = request('content');
         $post->save();
@@ -63,20 +66,21 @@ class PostController extends Controller
 
     public function delete(Post $post)
     {
-        $post->delete();
-        return redirect('/posts');
+       $this->authorize('delete',$post);
+       $post->delete();
+       return redirect('/posts');
     }
 
-    public function imageUpload(Request $request)
-    {
-        $path = $request->file('wangEditorFile')->store(md5(time()));
-        return [
-            'errno' => 0,
-            'data' => [
-                asset('storage/' . $path)
-            ]
-        ];
-    }
+   public function imageUpload(Request $request)
+   {
+    $path = $request->file('wangEditorFile')->store(md5(time()));
+    return [
+        'errno' => 0,
+        'data' => [
+            asset('storage/' . $path)
+        ]
+    ];
+}
 
 
 }
