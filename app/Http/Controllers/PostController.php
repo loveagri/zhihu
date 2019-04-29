@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Comment;
 use Illuminate\Http\Request;
 use \App\Post;
 
@@ -9,13 +10,14 @@ class PostController extends Controller
 {
     public function index()
     {
-        $posts = Post::orderBy('created_at', 'desc')->paginate(5);
+        $posts = Post::orderBy('created_at', 'desc')->withCount('comments')->paginate(5);
         // dd($posts);
         return view('post.index', compact('posts'));
     }
 
     public function show(Post $post)
     {
+        $post->load('comments');
         return view('post.show', compact('post'));
     }
 
@@ -36,7 +38,7 @@ class PostController extends Controller
         // $post->save();
 
         $user_id = \Auth::id();
-        $params = array_merge(request(['title','content']),compact('user_id'));
+        $params = array_merge(request(['title', 'content']), compact('user_id'));
         $post = Post::create($params);
 
         return redirect('posts');
@@ -55,7 +57,7 @@ class PostController extends Controller
             'content' => 'required|string|min:5',
         ]);
 
-        $this->authorize('update',$post);
+        $this->authorize('update', $post);
 
         $post->title = request('title');
         $post->content = request('content');
@@ -66,21 +68,34 @@ class PostController extends Controller
 
     public function delete(Post $post)
     {
-       $this->authorize('delete',$post);
-       $post->delete();
-       return redirect('/posts');
+        $this->authorize('delete', $post);
+        $post->delete();
+        return redirect('/posts');
     }
 
-   public function imageUpload(Request $request)
-   {
-    $path = $request->file('wangEditorFile')->store(md5(time()));
-    return [
-        'errno' => 0,
-        'data' => [
-            asset('storage/' . $path)
-        ]
-    ];
-}
+    public function imageUpload(Request $request)
+    {
+        $path = $request->file('wangEditorFile')->store(md5(time()));
+        return [
+            'errno' => 0,
+            'data' => [
+                asset('storage/' . $path)
+            ]
+        ];
+    }
 
+    public function comment(Post $post)
+    {
+        $this->validate(\request(), [
+            'content' => 'required|min:3'
+        ]);
+
+        $comment = new Comment();
+        $comment->user_id = \Auth::id();
+        $comment->content = \request('content');
+        $post->comments()->save($comment);
+
+        return back();
+    }
 
 }

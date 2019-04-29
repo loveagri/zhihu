@@ -10,7 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('',function () { return redirect('login'); })
+Route::get('/',function () { return redirect('/login'); });
 Route::get('/register', '\App\Http\Controllers\RegisterController@index');
 Route::post('/register', '\App\Http\Controllers\RegisterController@register');
 Route::get('/login', '\App\Http\Controllers\LoginController@index');
@@ -31,7 +31,7 @@ Route::group(['middleware'=>'auth:web'],function ()
     Route::get('/posts/{post}/edit', '\App\Http\Controllers\PostController@edit');
     Route::put('/posts/{post}', '\App\Http\Controllers\PostController@update');
 
-    Route::post('/posts/{post}/comment','\App\Http\Controller\PostController@comment');
-})
+    Route::post('/posts/{post}/comment','\App\Http\Controllers\PostController@comment');
+});
 
 
