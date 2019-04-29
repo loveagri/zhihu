@@ -20,7 +20,11 @@
                 <small>{{$post->created_at->toFormattedDateString()}} by <a href="">{{$post->user->name}}</a></small>
                 <p>{!! $post->content !!}</p>
                 <div>
-                    <a href="/posts/{{$post->id}}/zan" class="btn btn-primary">赞</a>
+                    @if ($post->zan(\Auth::id())->exists())
+                        <a href="/posts/{{$post->id}}/unzan" class="btn btn-info">取消赞</a>
+                    @else
+                        <a href="/posts/{{$post->id}}/zan" class="btn btn-primary">赞</a>
+                    @endif
                 </div>
             </div>
         </div>

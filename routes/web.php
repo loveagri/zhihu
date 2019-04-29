@@ -23,6 +23,8 @@ Route::group(['middleware'=>'auth:web'],function ()
     Route::post('/user/me/setting', '\App\Http\Controllers\UserController@settingStore');
 
     Route::get('/posts', '\App\Http\Controllers\PostController@index');
+    Route::get('/posts/{post}/zan', '\App\Http\Controllers\PostController@zan');
+    Route::get('/posts/{post}/unzan', '\App\Http\Controllers\PostController@unzan');
     Route::get('/posts/create', '\App\Http\Controllers\PostController@create');
     Route::get('/posts/{post}/delete', '\App\Http\Controllers\PostController@delete');
     Route::post('/posts/image/upload', '\App\Http\Controllers\PostController@imageUpload');

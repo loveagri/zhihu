@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Comment;
+use App\Zan;
 use Illuminate\Http\Request;
 use \App\Post;
 
@@ -10,7 +11,7 @@ class PostController extends Controller
 {
     public function index()
     {
-        $posts = Post::orderBy('created_at', 'desc')->withCount('comments')->paginate(5);
+        $posts = Post::orderBy('created_at', 'desc')->withCount(['comments','zans'])->paginate(5);
         // dd($posts);
         return view('post.index', compact('posts'));
     }
@@ -98,4 +99,20 @@ class PostController extends Controller
         return back();
     }
 
+
+    public function zan(Post $post)
+    {
+        $param = [
+            'user_id'=>\Auth::id(),
+            'post_id'=>$post->id
+        ];
+        Zan::firstOrCreate($param);
+        return back();
+    }
+
+    public function unzan(Post $post)
+    {
+        $post->zan(\Auth::id())->delete();
+        return back();
+    }
 }
