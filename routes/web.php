@@ -13,7 +13,7 @@
 Route::get('/',function () { return redirect('/login'); });
 Route::get('/register', '\App\Http\Controllers\RegisterController@index');
 Route::post('/register', '\App\Http\Controllers\RegisterController@register');
-Route::get('/login', '\App\Http\Controllers\LoginController@index');
+Route::get('/login', [ 'as' => 'login', 'uses' => '\App\Http\Controllers\LoginController@index']);
 Route::post('/login', '\App\Http\Controllers\LoginController@login');
 
 Route::group(['middleware'=>'auth:web'],function ()
