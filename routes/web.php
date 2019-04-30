@@ -22,6 +22,8 @@ Route::group(['middleware'=>'auth:web'],function ()
     Route::get('/user/me/setting', '\App\Http\Controllers\UserController@setting');
     Route::post('/user/me/setting', '\App\Http\Controllers\UserController@settingStore');
 
+    Route::get('/posts/search', '\App\Http\Controllers\PostController@search');
+
     Route::get('/posts', '\App\Http\Controllers\PostController@index');
     Route::get('/posts/{post}/zan', '\App\Http\Controllers\PostController@zan');
     Route::get('/posts/{post}/unzan', '\App\Http\Controllers\PostController@unzan');
@@ -34,6 +36,8 @@ Route::group(['middleware'=>'auth:web'],function ()
     Route::put('/posts/{post}', '\App\Http\Controllers\PostController@update');
 
     Route::post('/posts/{post}/comment','\App\Http\Controllers\PostController@comment');
+
+
 });
 
 
