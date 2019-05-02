@@ -40,6 +40,9 @@ Route::group(['middleware' => 'auth:web'], function () {
     Route::post('/user/{user}/fan', '\App\Http\Controllers\UserController@fan');
     Route::post('/user/{user}/unfan', '\App\Http\Controllers\UserController@unfan');
 
+    Route::get('/topic/{topic}', '\App\Http\Controllers\TopicController@show');
+    Route::post('/topic/{topic}/submit', '\App\Http\Controllers\TopicController@ç');
+
 });
 
 //Route::get('/', function () { return redirect('/login'); });
