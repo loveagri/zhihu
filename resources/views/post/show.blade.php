@@ -17,7 +17,7 @@
                         </a>
                     @endcan
                 </div>
-                <small>{{$post->created_at->toFormattedDateString()}} by <a href="/user/{{$post->user->name}}">{{$post->user->name}}</a></small>
+                <small>{{$post->created_at->toFormattedDateString()}} by <a href="/user/{{$post->user->id}}">{{$post->user->name}}</a></small>
                 <p>{!! $post->content !!}</p>
                 <div>
                     @if ($post->zan(\Auth::id())->exists())

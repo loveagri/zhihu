@@ -9,6 +9,7 @@
                     <input type="text" class="form-control" placeholder="">
                 </div>
             </div>
+
             <div class="form-group row">
                 <label class="col-sm-2 col-form-label">头像</label>
                 <div class="col-sm-4 row align-items-center">

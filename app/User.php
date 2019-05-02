@@ -41,7 +41,7 @@ class User extends Authenticatable
 
     public function fans()
     {
-        return $this->hasMany(Post::class,'star_id','id');
+        return $this->hasMany(Fan::class,'star_id','id');
     }
 
 

@@ -38,7 +38,7 @@ Route::group(['middleware' => 'auth:web'], function () {
 
     Route::get('/user/{user}', '\App\Http\Controllers\UserController@show');
     Route::post('/user/{user}/fan', '\App\Http\Controllers\UserController@fan');
-    Route::post('/user/{user}unfan', '\App\Http\Controllers\UserController@unfan');
+    Route::post('/user/{user}/unfan', '\App\Http\Controllers\UserController@unfan');
 
 });
 

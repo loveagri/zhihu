@@ -33,8 +33,8 @@
                             {{\Auth::user()->name}}
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">我的主页</a>
-                            <a class="dropdown-item" href="#">个人设置</a>
+                            <a class="dropdown-item" href="/user/{{Auth::id()}}">我的主页</a>
+                            <a class="dropdown-item" href="/user/me/setting">个人设置</a>
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="/logout">退出</a>
                         </div>
