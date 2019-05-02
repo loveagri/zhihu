@@ -118,7 +118,12 @@ class PostController extends Controller
 
     public function search()
     {
-        $posts = Post::orderBy('created_at', 'desc')->withCount(['comments','zans'])->paginate(5);
-        return view('post.search', compact('posts'));
+        $this->validate(\request(), [
+            'query'=> 'required'
+        ]);
+
+        $query = \request('query');
+        $posts = Post::search($query)->paginate(2);
+        return view('post.search', compact('posts','query'));
     }
 }

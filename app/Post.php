@@ -3,8 +3,25 @@
 namespace App;
 
 
+use Laravel\Scout\Searchable;
+
 class Post extends Model
 {
+
+    use Searchable;
+
+    public function searchableAs()
+    {
+        return 'post';
+    }
+
+    public function toSearchableArray()
+    {
+        return [
+            'title'=>$this->title,
+            'content'=>$this->content
+        ];
+    }
     public function user()
     {
         return $this->belongsTo('App\User');

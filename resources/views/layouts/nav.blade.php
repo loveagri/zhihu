@@ -18,8 +18,8 @@
                         <a class="nav-link" href="#">通知</a>
                     </li>
                     <li class="nav-item mr-4">
-                        <form class="form-inline my-2 my-lg-0">
-                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <form class="form-inline my-2 my-lg-0" action="/posts/search">
+                            <input class="form-control mr-sm-2" name="query" type="search" placeholder="Search" aria-label="Search">
                             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                         </form>
                     </li>

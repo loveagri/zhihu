@@ -32,4 +32,76 @@ class User extends Authenticatable
 //    protected $casts = [
 //        'email_verified_at' => 'datetime',
 //    ];
+
+    public function posts()
+    {
+        return $this->hasMany(Post::class,'user_id','id');
+    }
+
+
+    public function fans()
+    {
+        return $this->hasMany(Post::class,'star_id','id');
+    }
+
+
+    public function stars()
+    {
+        return $this->hasMany(Fan::class,'fan_id','id');
+    }
+
+    public function doFan($uid)
+    {
+        $fan = new Fan();
+        $fan->star_id = $uid;
+        $this->stars()->save($fan);
+    }
+
+    public function doUnfan($uid)
+    {
+        $fan = new Fan();
+        $fan->star_id = $uid;
+        $this->stars()->delete($fan);
+    }
+
+    public function hasFan($uid)
+    {
+        return $this->fans()->where('fan_id',$uid)->count();
+    }
+
+    public function hasStar($uid)
+    {
+        return $this->stars()->where('star_id',$uid)->count();
+    }
+
+
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

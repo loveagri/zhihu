@@ -10,14 +10,13 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/',function () { return redirect('/login'); });
+
 Route::get('/register', '\App\Http\Controllers\RegisterController@index');
 Route::post('/register', '\App\Http\Controllers\RegisterController@register');
-Route::get('/login', [ 'as' => 'login', 'uses' => '\App\Http\Controllers\LoginController@index']);
+Route::get('/login', ['as' => 'login', 'uses' => '\App\Http\Controllers\LoginController@index']);
 Route::post('/login', '\App\Http\Controllers\LoginController@login');
 
-Route::group(['middleware'=>'auth:web'],function ()
-{
+Route::group(['middleware' => 'auth:web'], function () {
     Route::get('/logout', '\App\Http\Controllers\LoginController@logout');
     Route::get('/user/me/setting', '\App\Http\Controllers\UserController@setting');
     Route::post('/user/me/setting', '\App\Http\Controllers\UserController@settingStore');
@@ -35,9 +34,12 @@ Route::group(['middleware'=>'auth:web'],function ()
     Route::get('/posts/{post}/edit', '\App\Http\Controllers\PostController@edit');
     Route::put('/posts/{post}', '\App\Http\Controllers\PostController@update');
 
-    Route::post('/posts/{post}/comment','\App\Http\Controllers\PostController@comment');
+    Route::post('/posts/{post}/comment', '\App\Http\Controllers\PostController@comment');
 
+    Route::get('/user/{user}', '\App\Http\Controllers\UserController@show');
+    Route::post('/user/{user}/fan', '\App\Http\Controllers\UserController@fan');
+    Route::post('/user/{user}unfan', '\App\Http\Controllers\UserController@unfan');
 
 });
 
-
+//Route::get('/', function () { return redirect('/login'); });
