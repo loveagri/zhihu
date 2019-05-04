@@ -16,9 +16,10 @@
     Featured
 </div>
 <ul class="list-group list-group-flush">
-    <li class="list-group-item">Cras justo odio</li>
-    <li class="list-group-item">Dapibus ac facilisis in</li>
-    <li class="list-group-item">Vestibulum at eros</li>
+    @foreach ($topics as $topic)
+        <li class="list-group-item"><a href="/topic/{{$topic->id}}">{{$topic->name}}</a></li>
+    @endforeach
+
 </ul>
 </div>
 
