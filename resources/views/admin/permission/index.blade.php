@@ -27,8 +27,8 @@
                                 @foreach($permissions as $permission)
                                     <tr>
                                         <td>{{$permission->id}}.</td>
-                                        <td>{{$permission->name}}.</td>
-                                        <td>{{$permission->description}}.</td>
+                                        <td>{{$permission->name}}</td>
+                                        <td>{{$permission->description}}</td>
                                         <td>
                                         </td>
                                     </tr>

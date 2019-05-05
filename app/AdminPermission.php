@@ -11,8 +11,8 @@ class AdminPermission extends Model
         return $this->belongsToMany(
             AdminRole::class,
             'admin_permission_role',
-            'permission_id',
-            'role_id'
+            'role_id',
+            'permission_id'
         )->withPivot(['permission_id', 'role_id']);
     }
 

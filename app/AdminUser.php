@@ -15,12 +15,13 @@ class AdminUser extends Authenticatable
             AdminRole::class,
             'admin_role_user',
             'user_id',
-            'role_id')->withPivot(['user_id','role_id']);
+            'role_id'
+        )->withPivot(['user_id','role_id']);
     }
 
     public function isInRoles($roles)
     {
-        return !!$roles->intersect($this->roles)->count();
+        return !! $roles->intersect($this->roles)->count();
     }
 
     public function assignRole($role)
@@ -35,7 +36,8 @@ class AdminUser extends Authenticatable
 
     public function hasPermission($permission)
     {
-        $this->isInRoles($permission->roles);
+//        dd($permission);
+       return $this->isInRoles($permission->roles);
     }
 
 
