@@ -34,9 +34,9 @@
                     </span>
                 </a>
                 <ul class="treeview-menu">
-                    <li class="active"><a href="index.html"><i class="fa fa-circle-o"></i>权限管理</a></li>
+                    <li><a href="/admin/permissions"><i class="fa fa-circle-o"></i>权限管理</a></li>
                     <li><a href="/admin/users"><i class="fa fa-circle-o"></i>用户管理</a></li>
-                    <li><a href="index.html"><i class="fa fa-circle-o"></i>角色管理</a></li>
+                    <li><a href="/admin/roles"><i class="fa fa-circle-o"></i>角色管理</a></li>
                 </ul>
             </li>
             <li class="treeview">
