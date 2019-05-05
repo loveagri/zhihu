@@ -19,10 +19,11 @@ class Post extends Model
     public function toSearchableArray()
     {
         return [
-            'title'=>$this->title,
-            'content'=>$this->content
+            'title' => $this->title,
+            'content' => $this->content
         ];
     }
+
     public function user()
     {
         return $this->belongsTo('App\User');
@@ -45,18 +46,27 @@ class Post extends Model
 
     public function scopeAuthorBy(Builder $query, $user_id)
     {
-        return $query->where('user_id',$user_id);
+        return $query->where('user_id', $user_id);
     }
 
     public function postTopics()
     {
-        return $this->hasMany(\App\PostTopic::class,'post_id','id');
+        return $this->hasMany(\App\PostTopic::class, 'post_id', 'id');
     }
 
     public function scopeTopicNotBy(Builder $query, $topic_id)
     {
-        return $query->doesntHave('postTopics','and',function ($q) use($topic_id){
-            $q->where('topic_id',$topic_id);
+        return $query->doesntHave('postTopics', 'and', function ($q) use ($topic_id) {
+            $q->where('topic_id', $topic_id);
+        });
+    }
+
+    protected static function boot()
+    {
+        parent::boot();
+
+        static::addGlobalScope('avaiable', function (Builder $builder) {
+            $builder->whereIn('status', [0, 1]);
         });
     }
 }
