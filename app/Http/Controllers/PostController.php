@@ -11,7 +11,13 @@ class PostController extends Controller
 {
     public function index()
     {
+        //preload1
+//        $posts = Post::orderBy('created_at', 'desc')->withCount(['comments','zans'])->with('user')->paginate(5);
+
+        //preload2
         $posts = Post::orderBy('created_at', 'desc')->withCount(['comments','zans'])->paginate(5);
+        $posts->load('user');
+
         return view('post.index', compact('posts'));
     }
 

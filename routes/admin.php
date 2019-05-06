@@ -45,13 +45,7 @@ Route::group(['prefix' => 'admin'], function () {
                 'only' => ['index', 'create', 'store'],
             ]);
         });
-
-
     });
-
-
-
-
 });
 
 
