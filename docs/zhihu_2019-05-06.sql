@@ -7,7 +7,7 @@
 #
 # Host: 127.0.0.1 (MySQL 5.7.22)
 # Database: zhihu
-# Generation Time: 2019-05-05 16:05:07 +0000
+# Generation Time: 2019-05-06 15:29:47 +0000
 # ************************************************************
 
 
@@ -47,30 +47,6 @@ VALUES
 UNLOCK TABLES;
 
 
-# Dump of table admin_role_user
-# ------------------------------------------------------------
-
-DROP TABLE IF EXISTS `admin_role_user`;
-
-CREATE TABLE `admin_role_user` (
-  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `role_id` int(11) NOT NULL,
-  `user_id` int(11) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
-LOCK TABLES `admin_role_user` WRITE;
-/*!40000 ALTER TABLE `admin_role_user` DISABLE KEYS */;
-
-INSERT INTO `admin_role_user` (`id`, `role_id`, `user_id`)
-VALUES
-	(1,1,1),
-	(2,2,2);
-
-/*!40000 ALTER TABLE `admin_role_user` ENABLE KEYS */;
-UNLOCK TABLES;
-
-
 # Dump of table admin_permissions
 # ------------------------------------------------------------
 
@@ -96,6 +72,30 @@ VALUES
 	(4,'notice','通知管理','2019-05-05 22:02:48','2019-05-05 22:02:48');
 
 /*!40000 ALTER TABLE `admin_permissions` ENABLE KEYS */;
+UNLOCK TABLES;
+
+
+# Dump of table admin_role_user
+# ------------------------------------------------------------
+
+DROP TABLE IF EXISTS `admin_role_user`;
+
+CREATE TABLE `admin_role_user` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `role_id` int(11) NOT NULL,
+  `user_id` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+LOCK TABLES `admin_role_user` WRITE;
+/*!40000 ALTER TABLE `admin_role_user` DISABLE KEYS */;
+
+INSERT INTO `admin_role_user` (`id`, `role_id`, `user_id`)
+VALUES
+	(1,1,1),
+	(2,2,2);
+
+/*!40000 ALTER TABLE `admin_role_user` ENABLE KEYS */;
 UNLOCK TABLES;
 
 
@@ -204,6 +204,25 @@ VALUES
 UNLOCK TABLES;
 
 
+# Dump of table jobs
+# ------------------------------------------------------------
+
+DROP TABLE IF EXISTS `jobs`;
+
+CREATE TABLE `jobs` (
+  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+  `queue` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `payload` longtext COLLATE utf8mb4_unicode_ci NOT NULL,
+  `attempts` tinyint(3) unsigned NOT NULL,
+  `reserved_at` int(10) unsigned DEFAULT NULL,
+  `available_at` int(10) unsigned NOT NULL,
+  `created_at` int(10) unsigned NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `jobs_queue_index` (`queue`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+
+
 # Dump of table migrations
 # ------------------------------------------------------------
 
@@ -232,9 +251,39 @@ VALUES
 	(15,'2019_05_04_153735_create_post_topics_table',5),
 	(16,'2019_05_05_111640_create_admin_users_table',5),
 	(17,'2019_05_05_171513_alter_posts_table',6),
-	(18,'2019_05_05_192955_create_permission_and_roles_table',7);
+	(18,'2019_05_05_192955_create_permission_and_roles_table',7),
+	(19,'2019_05_06_220207_create_notices_table',8),
+	(20,'2019_05_06_224156_create_jobs_table',9);
 
 /*!40000 ALTER TABLE `migrations` ENABLE KEYS */;
+UNLOCK TABLES;
+
+
+# Dump of table notices
+# ------------------------------------------------------------
+
+DROP TABLE IF EXISTS `notices`;
+
+CREATE TABLE `notices` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `title` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `content` varchar(1000) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+LOCK TABLES `notices` WRITE;
+/*!40000 ALTER TABLE `notices` DISABLE KEYS */;
+
+INSERT INTO `notices` (`id`, `title`, `content`, `created_at`, `updated_at`)
+VALUES
+	(1,'','这事测试哦同学中','2019-05-06 22:22:10','2019-05-06 22:22:10'),
+	(2,'是袁弘却回答','是袁弘却回答是袁弘却回答是袁弘却回答','2019-05-06 22:25:13','2019-05-06 22:25:13'),
+	(3,'六一节快乐','欢迎大家登录简书','2019-05-06 22:51:15','2019-05-06 22:51:15'),
+	(4,'大家好','这事测试','2019-05-06 22:52:17','2019-05-06 22:52:17');
+
+/*!40000 ALTER TABLE `notices` ENABLE KEYS */;
 UNLOCK TABLES;
 
 
@@ -368,6 +417,34 @@ VALUES
 	(2,'经典','2019-05-04 14:39:33','2019-05-04 14:39:33');
 
 /*!40000 ALTER TABLE `topics` ENABLE KEYS */;
+UNLOCK TABLES;
+
+
+# Dump of table user_notice
+# ------------------------------------------------------------
+
+DROP TABLE IF EXISTS `user_notice`;
+
+CREATE TABLE `user_notice` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `user_id` int(11) NOT NULL DEFAULT '0',
+  `notice_id` int(11) NOT NULL DEFAULT '0',
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+LOCK TABLES `user_notice` WRITE;
+/*!40000 ALTER TABLE `user_notice` DISABLE KEYS */;
+
+INSERT INTO `user_notice` (`id`, `user_id`, `notice_id`, `created_at`, `updated_at`)
+VALUES
+	(1,1,3,NULL,NULL),
+	(2,2,3,NULL,NULL),
+	(3,1,4,NULL,NULL),
+	(4,2,4,NULL,NULL);
+
+/*!40000 ALTER TABLE `user_notice` ENABLE KEYS */;
 UNLOCK TABLES;
 
 
