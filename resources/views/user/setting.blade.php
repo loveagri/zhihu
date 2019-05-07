@@ -7,7 +7,7 @@
             <div class="form-group row">
                 <label class="col-sm-2 col-form-label">用户名</label>
                 <div class="col-sm-10">
-                    <input type="text" class="form-control" placeholder="">
+                    <input type="text" name="name" class="form-control" placeholder="">
                 </div>
             </div>
             <div class="form-group row">
