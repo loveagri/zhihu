@@ -2,12 +2,12 @@
 
 @section('content')
     <div class="col-sm-8 blog-main mt-3">
-        <form  action="/user/me/setting" method="POST" enctype="multipart/form-data">
+        <form  action="/user/{{Auth::id()}}/setting" method="POST" enctype="multipart/form-data">
             @csrf
             <div class="form-group row">
                 <label class="col-sm-2 col-form-label">用户名</label>
                 <div class="col-sm-10">
-                    <input type="text" name="name" class="form-control" placeholder="">
+                    <input type="text" name="name" class="form-control" value="{{$me->name}}" placeholder="昵称">
                 </div>
             </div>
             <div class="form-group row">
