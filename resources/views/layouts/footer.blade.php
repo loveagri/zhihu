@@ -1,5 +1,5 @@
 <footer class="blog-footer">
-    <p>冀ICP备18030681号</p>
+    <p>Powered by Assumption University</p>
     <p>
         <a href="#">Back to top</a>
     </p>

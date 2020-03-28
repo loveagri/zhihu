@@ -13,9 +13,9 @@
                     <div class="box">
 
                         <div class="box-header with-border">
-                            <h3 class="box-title">用户列表</h3>
+                            <h3 class="box-title">user list</h3>
                         </div>
-                        <a type="button" class="btn " href="/admin/users/create" >增加用户</a>
+                        <a type="button" class="btn " href="/admin/users/create" >add user</a>
                         <!-- /.box-header -->
                         <div class="box-body">
                             <table class="table table-bordered">
@@ -29,7 +29,7 @@
                                     <td>{{$user->id}}.</td>
                                     <td>{{$user->name}}</td>
                                     <td>
-                                        <a type="button" class="btn" href="/admin/users/{{$user->id}}/role" >角色管理</a>
+                                        <a type="button" class="btn" href="/admin/users/{{$user->id}}/role" >Role management</a>
                                     </td>
                                 </tr>
                                 @endforeach

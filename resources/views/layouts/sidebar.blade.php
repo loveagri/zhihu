@@ -2,18 +2,19 @@
 
     <div class="card mb-3" >
       <div class="card-header">
-        欢迎！欢迎来到静思田园
+        Welcome to Assumption University
     </div>
 
    <ul class="list-group list-group-flush">
     <li class="list-group-item">    <p>
-        <strong><a href="/">静思田园</a></strong> 基于 Laravel5.7 构建
+{{--        <strong><a href="/">静思田园</a></strong> --}}
+            AU Forum, A platform that conveys infinite charm
     </p></li>
 </ul>
 </div>
 <div class="card" >
   <div class="card-header">
-    Featured
+    Topics
 </div>
 <ul class="list-group list-group-flush">
     @foreach ($topics as $topic)

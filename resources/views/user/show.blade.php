@@ -5,23 +5,23 @@
         <blockquote>
             <p>
                 <img src="{{$user->avatar}}" alt="" class="img-rounded"
-                     style="border-radius:500px; height: 40px"> {{$user->name}}
+                     style="border-radius:500px; height: 40px"> <span style="color:#007bff">{{$user->name}}</span>
             </p>
-            <footer>关注：{{$user->stars_count}}｜粉丝：{{$user->fans_count}}｜文章：{{$user->posts_count}}</footer>
+            <footer>Follows：{{$user->stars_count}}｜Fans：{{$user->fans_count}}｜Posts：{{$user->posts_count}}</footer>
             @include('user.badges.like', ['target_user' => $user])
         </blockquote>
         <ul class="nav nav-tabs" id="myTab" role="tablist">
             <li class="nav-item">
                 <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
-                   aria-selected="true">文章</a>
+                   aria-selected="true">Posts</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
-                   aria-controls="profile" aria-selected="false">关注</a>
+                   aria-controls="profile" aria-selected="false">Follows</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
-                   aria-controls="contact" aria-selected="false">粉丝</a>
+                   aria-controls="contact" aria-selected="false">Fans</a>
             </li>
         </ul>
         <div class="tab-content" id="myTabContent">
@@ -48,8 +48,8 @@
                                 <a href="/user/{{$user->id}}" class="text-primary"><h5
                                         class="mb-1 text-primary">{{$user->name}}</h5></a>
                             </div>
-                            <footer>关注：{{$user->stars_count}}｜粉丝：{{$user->fans_count}}
-                                ｜文章：{{$user->posts_count}}</footer>
+                            <footer>Follows：{{$user->stars_count}}｜Fans：{{$user->fans_count}}
+                                ｜Posts：{{$user->posts_count}}</footer>
                             @include('user.badges.like', ['target_user' => $user])
                         </div>
                     @endforeach
@@ -63,8 +63,8 @@
                                 <a href="/user/{{$user->id}}" class="text-primary"><h5
                                         class="mb-1 text-primary">{{$user->name}}</h5></a>
                             </div>
-                            <footer>关注：{{$user->stars_count}}｜粉丝：{{$user->fans_count}}
-                                ｜文章：{{$user->posts_count}}</footer>
+                            <footer>Follows：{{$user->stars_count}}｜Fans：{{$user->fans_count}}
+                                ｜Posts：{{$user->posts_count}}</footer>
                             @include('user.badges.like', ['target_user' => $user])
                         </div>
                     @endforeach

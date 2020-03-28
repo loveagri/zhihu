@@ -1,21 +1,21 @@
 <div class="blog-masthead bg-primary">
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light bg-primary">
-            {{--     <a class="navbar-brand" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                --}}
+          <a class="navbar-brand" href="/"><img src="/image/au.png" class="au-logo" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active mr-4">
-                        <a class="nav-link" href="/posts">首页 <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="/posts">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item mr-4">
-                        <a class="nav-link" href="/posts/create">写文章</a>
+                        <a class="nav-link" href="/posts/create">Publish</a>
                     </li>
                     <li class="nav-item mr-4">
-                        <a class="nav-link" href="#">通知</a>
+                        <a class="nav-link" href="/notices">Notice</a>
                     </li>
                     <li class="nav-item mr-4">
                         <form class="form-inline my-2 my-lg-0" action="/posts/search">
@@ -33,10 +33,10 @@
                             {{\Auth::user()->name}}
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="/user/{{Auth::id()}}">我的主页</a>
-                            <a class="dropdown-item" href="/user/me/setting">个人设置</a>
+                            <a class="dropdown-item" href="/user/{{Auth::id()}}">My Homepage</a>
+                            <a class="dropdown-item" href="/user/me/setting">Setting</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="/logout">退出</a>
+                            <a class="dropdown-item" href="/logout">Logout</a>
                         </div>
                     </li>
                 </ul>

@@ -26,26 +26,26 @@
         <ul class="sidebar-menu" data-widget="tree">
             <li class="header">MAIN NAVIGATION</li>
             @can('system')
-                <li class="active treeview">
+                <li class="treeview">
                     <a href="#">
                         <i class="fa fa-dashboard"></i>
-                        <span>系统管理</span>
+                        <span>System Management</span>
                         <span class="pull-right-container">
                       <i class="fa fa-angle-left pull-right"></i>
                     </span>
                     </a>
                     <ul class="treeview-menu">
-                        <li><a href="/admin/permissions"><i class="fa fa-circle-o"></i>权限管理</a></li>
-                        <li><a href="/admin/users"><i class="fa fa-circle-o"></i>用户管理</a></li>
-                        <li><a href="/admin/roles"><i class="fa fa-circle-o"></i>角色管理</a></li>
+                        <li><a href="/admin/permissions"><i class="fa fa-circle-o"></i>permission Management</a></li>
+                        <li><a href="/admin/users"><i class="fa fa-circle-o"></i>User Management</a></li>
+                        <li><a href="/admin/roles"><i class="fa fa-circle-o"></i>Role Management</a></li>
                     </ul>
                 </li>
             @endcan
             @can('post')
-                <li>
+                <li class="active">
                     <a href="/admin/posts">
                         <i class="fa fa-files-o"></i>
-                        <span>文章管理</span>
+                        <span>Post Management</span>
                     </a>
                 </li>
             @endcan
@@ -53,7 +53,7 @@
                 <li>
                     <a href="/admin/topics">
                         <i class="fa fa-files-o"></i>
-                        <span>专题管理</span>
+                        <span>Topic Management</span>
                     </a>
 
                 </li>
@@ -62,7 +62,7 @@
                 <li>
                     <a href="/admin/notices">
                         <i class="fa fa-files-o"></i>
-                        <span>通知管理</span>
+                        <span>Notice Management</span>
                     </a>
                 </li>
             @endcan

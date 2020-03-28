@@ -2,13 +2,13 @@
 
 @section('content')
     <div class="col-sm-8 blog-main mt-3">
-        <blockquote>
+        <blockquote class=blockquote-float">
             <p>{{$topic->name}}</p>
-            <footer>文章：{{$topic->post_topics_count}}</footer>
+            <footer>Posts：{{$topic->post_topics_count}}</footer>
             <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary" topic-id="{{$topic->id}}" data-toggle="modal"
+            <button type="button" class="btn btn-primary contribute-btn" topic-id="{{$topic->id}}" data-toggle="modal"
                     data-target="#topic_submit_modal">
-                投稿
+                Contribute
             </button>
         </blockquote>
         <!-- Modal -->
@@ -17,7 +17,7 @@
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title">我的文章列表</h5>
+                        <h5 class="modal-title">Post lists</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -36,7 +36,7 @@
                             @endforeach
                         </div>
                         <div class="modal-footer">
-                            <button type="submit" class="btn btn-primary">投稿</button>
+                            <button type="submit" class="btn btn-primary">Contribute</button>
                         </div>
                     </form>
                 </div>
@@ -45,7 +45,7 @@
         <ul class="nav nav-tabs" id="myTab" role="tablist">
             <li class="nav-item">
                 <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
-                   aria-selected="true">文章</a>
+                   aria-selected="true">Posts</a>
             </li>
 
         </ul>

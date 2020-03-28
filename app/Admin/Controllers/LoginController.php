@@ -20,10 +20,10 @@ class LoginController extends Controller
         $user = request(['name','password']);
 
         if (\Auth::guard('admin')->attempt($user)){
-            return redirect('/admin/home');
+            return redirect('/admin/posts');
         }
 
-        return \Redirect::back()->withErrors('用户名密码不匹配');
+        return \Redirect::back()->withErrors('Password not match');
     }
 
     public function logout()

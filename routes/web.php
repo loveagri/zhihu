@@ -11,6 +11,7 @@
 |
 */
 
+Route::get('/', '\App\Http\Controllers\PostController@index');
 Route::get('/register', '\App\Http\Controllers\RegisterController@index');
 Route::post('/register', '\App\Http\Controllers\RegisterController@register');
 Route::get('/login', ['as' => 'login', 'uses' => '\App\Http\Controllers\LoginController@index']);
