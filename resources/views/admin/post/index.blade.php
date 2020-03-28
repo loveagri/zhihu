@@ -9,7 +9,7 @@
                 <div class="col-lg-10 col-xs-6">
                     <div class="box">
                         <div class="box-header with-border">
-                            <h3 class="box-title">文章列表</h3>
+                            <h3 class="box-title">Post lists</h3>
                         </div>
                         <!-- /.box-header -->
                         <div class="box-body">
@@ -17,8 +17,8 @@
                                 <tbody>
                                 <tr>
                                     <th style="width: 10px">#</th>
-                                    <th>文章标题</th>
-                                    <th>操作</th>
+                                    <th>Post title</th>
+                                    <th>operation</th>
                                 </tr>
                                 @foreach ($posts as $post)
                                     <tr>
@@ -26,10 +26,10 @@
                                         <td>{{$post->title}}</td>
                                         <td>
                                             <button type="button" class="btn btn-block btn-default post-audit"
-                                                    post-id="{{$post->id}}" post-action-status="1">通过
+                                                    post-id="{{$post->id}}" post-action-status="1">Pass
                                             </button>
                                             <button type="button" class="btn btn-block btn-default post-audit"
-                                                    post-id="{{$post->id}}" post-action-status="-1">拒绝
+                                                    post-id="{{$post->id}}" post-action-status="-1">Reject
                                             </button>
                                         </td>
                                     </tr>

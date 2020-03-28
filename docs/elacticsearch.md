@@ -25,11 +25,6 @@ composer require tamayo/laravel-scout-elastic
 
 https://www.easck.com/cos/2019/0429/288491.shtml
 
-
-Laravel使用scout集成elasticsearch做全文搜索的实现方法
-2019-04-29 20:00 来源: 易采站长站
-本文介绍了Laravel使用scout集成elasticsearch做全文搜索的实现方法，分享给大家，具体如下：
-
 安装需要的组件
 composer require tamayo/laravel-scout-elastic
 composer require laravel/scout 

@@ -13,18 +13,18 @@
                     <div class="box">
 
                         <div class="box-header with-border">
-                            <h3 class="box-title">角色列表</h3>
+                            <h3 class="box-title">Role lists</h3>
                         </div>
-                        <a type="button" class="btn " href="/admin/roles/create">增加角色</a>
+                        <a type="button" class="btn " href="/admin/roles/create">Add role</a>
                         <!-- /.box-header -->
                         <div class="box-body">
                             <table class="table table-bordered">
                                 <tbody>
                                 <tr>
                                     <th style="width: 10px">#</th>
-                                    <th>角色名称</th>
-                                    <th>角色描述</th>
-                                    <th>操作</th>
+                                    <th>Role name</th>
+                                    <th>Role description</th>
+                                    <th>operation</th>
                                 </tr>
                                 @foreach($roles as $role)
                                     <tr>
@@ -32,7 +32,7 @@
                                         <td>{{$role->name}}</td>
                                         <td>{{$role->description}}</td>
                                         <td>
-                                            <a type="button" class="btn" href="/admin/roles/{{$role->id}}/permission">权限管理</a>
+                                            <a type="button" class="btn" href="/admin/roles/{{$role->id}}/permission">Permission Management</a>
                                         </td>
                                     </tr>
                                 @endforeach

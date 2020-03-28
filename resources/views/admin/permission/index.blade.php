@@ -12,17 +12,17 @@
                     <div class="box">
 
                         <div class="box-header with-border">
-                            <h3 class="box-title">权限列表</h3>
+                            <h3 class="box-title">Permission lists</h3>
                         </div>
-                        <a type="button" class="btn " href="/admin/permissions/create" >增加权限</a>
+                        <a type="button" class="btn " href="/admin/permissions/create" >add permission</a>
                         <!-- /.box-header -->
                         <div class="box-body">
                             <table class="table table-bordered">
                                 <tbody><tr>
                                     <th style="width: 10px">#</th>
-                                    <th>权限名称</th>
-                                    <th>描述</th>
-                                    <th>操作</th>
+                                    <th>permission name</th>
+                                    <th>description</th>
+                                    <th>operation</th>
                                 </tr>
                                 @foreach($permissions as $permission)
                                     <tr>

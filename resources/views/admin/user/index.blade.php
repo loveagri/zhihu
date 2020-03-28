@@ -15,14 +15,14 @@
                         <div class="box-header with-border">
                             <h3 class="box-title">user list</h3>
                         </div>
-                        <a type="button" class="btn " href="/admin/users/create" >add user</a>
+                        <a type="button" class="btn " href="/admin/users/create" >Add user</a>
                         <!-- /.box-header -->
                         <div class="box-body">
                             <table class="table table-bordered">
                                 <tbody><tr>
                                     <th style="width: 10px">#</th>
-                                    <th>用户名称</th>
-                                    <th>操作</th>
+                                    <th>Username</th>
+                                    <th>operation</th>
                                 </tr>
                                 @foreach($users as $user)
                                 <tr>

@@ -12,7 +12,7 @@
                     <div class="box">
 
                         <div class="box-header with-border">
-                            <h3 class="box-title">权限列表</h3>
+                            <h3 class="box-title">Permission lists</h3>
                         </div>
                         <!-- /.box-header -->
                         <div class="box-body">
@@ -51,7 +51,7 @@
                                     </div>
                                 </div>
                                 <div class="box-footer">
-                                    <button type="submit" class="btn btn-primary">提交</button>
+                                    <button type="submit" class="btn btn-primary">Submit</button>
                                 </div>
                             </form>
 
