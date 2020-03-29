@@ -5,7 +5,7 @@
     <div class="col-sm-8 blog-main mt-3">
         <div class="list-group mt-4 border-0">
             <div class="alert alert-success" role="alert">
-                下面是搜索"{{$query}}"出现的文章，共{{$posts->total()}}条
+                The posts contain "{{$query}}"，total page: {{$posts->total()}}
             </div>
             @foreach($posts as $post)
                 <div class="list-group-item list-group-item-action border-0 mt-2">

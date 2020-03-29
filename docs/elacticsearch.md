@@ -27,7 +27,9 @@ cat logs/elasticsearch.log
 
 php artisan vendor:publish --provider="Laravel\Scout\ScoutServiceProvider"
 
-composer require tamayo/laravel-scout-elastic   
+composer require tamayo/laravel-scout-elastic  
+
+php artisan scout:import "\App\Post" 
 
 
 https://www.easck.com/cos/2019/0429/288491.shtml
