@@ -187,4 +187,13 @@ p {
     margin-top: 0.5rem;
 }
 
-
+.search-btn{
+    color:#495057;
+    border: 1px solid #ced4da;
+    background: #fff;
+}
+.search-btn:hover{
+    border: 1px solid #28a745;
+    color: #fff;
+    background: #28a745;
+}
