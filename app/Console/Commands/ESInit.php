@@ -70,7 +70,7 @@ class ESInit extends Command
         ];
         $client->put($url, $params);
 
-        $this->info('============创建模板成功==========');
+        $this->info('============create template success==========');
         // 创建index
         $url = config('scout.elasticsearch.hosts')[0] . '/' . config('scout.elasticsearch.index');
         $client->delete($url);
@@ -92,7 +92,7 @@ class ESInit extends Command
         ];
         $client->put($url, $params);
 
-        $this->info('============创建索引成功==========');
+        $this->info('============create index  success==========');
         return;
     }
 }
