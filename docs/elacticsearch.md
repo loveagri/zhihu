@@ -10,9 +10,16 @@ cd elasticsearch-rtf
 
 ./bin/elasticsearch-plugin install https://github.com/medcl/elasticsearch-analysis-ik/releases/download/v6.3.0/elasticsearch-analysis-ik-6.3.0.zip
 
+#can not run elasticsearch as root centos
+
+adduser elasticsearch
+chown -R elasticsearch:elasticsearch ./elasticsearch-rtf-master
+sudo su elasticsearch
+#can not run elasticsearch as root centos
+
 bin/elasticsearch -d 
 
- ps aux|grep java 
+ps aux|grep java 
  
 cat logs/elasticsearch.log 
 

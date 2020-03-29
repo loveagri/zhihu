@@ -144,6 +144,14 @@ return [
     |
     */
 
-    'attributes' => [],
+    'attributes' => [
+        'username' => 'username',
+        'account'  => 'account',
+        'captcha'  => 'captcha',
+        'mobile'   => 'mobile',
+        'password' => 'password',
+        'content'  => 'content',
+        'identity' => 'identity',
+    ],
 
 ];
