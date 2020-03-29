@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="container" style="min-height: 100vh;margin-top: 10rem">
-        <h2 class="text-center">请登录</h2>
+        <h2 class="text-center">Sign in</h2>
         <form class="w-25 mx-auto" action="/login" method="POST">
             @csrf
             <div class="form-group">
@@ -19,8 +19,8 @@
                 <label class="form-check-label" for="check-me-out">Check me out</label>
             </div>
             @include('layouts.error')
-            <button type="submit" class="btn btn-primary btn-block">登录</button>
-            <a href="/register" class="btn btn-primary btn-block">去注册&gt;&gt;</a>
+            <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+            <a href="/register" class="btn btn-primary btn-block">Sign up&gt;&gt;</a>
         </form>
     </div>
 @stop
