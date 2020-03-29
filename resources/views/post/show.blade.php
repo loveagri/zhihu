@@ -21,9 +21,9 @@
                 <p>{!! $post->content !!}</p>
                 <div>
                     @if ($post->zan(\Auth::id())->exists())
-                        <a href="/posts/{{$post->id}}/unzan" class="btn btn-info">取消赞</a>
+                        <a href="/posts/{{$post->id}}/unzan" class="btn btn-info">unlike</a>
                     @else
-                        <a href="/posts/{{$post->id}}/zan" class="btn btn-primary">赞</a>
+                        <a href="/posts/{{$post->id}}/zan" class="btn btn-primary">like</a>
                     @endif
                 </div>
             </div>
@@ -43,7 +43,7 @@
         </div>
         <div class="card my-5">
             <div class="card-header">
-                <h5 class="card-title m-0">发表评论</h5>
+                <h5 class="card-title m-0">Publish</h5>
             </div>
             <div class="card-body">
                 <form class="mt5" action="/posts/{{$post->id}}/comment" method="POST">
@@ -52,7 +52,7 @@
                         <textarea class="form-control" name="content" rows="3"></textarea>
                     </div>
                     @include('layouts.error')
-                    <button type="submit" class="btn btn-primary">发表评论</button>
+                    <button type="submit" class="btn btn-primary">Publish</button>
                 </form>
             </div>
         </div>
