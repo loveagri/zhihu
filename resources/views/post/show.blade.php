@@ -30,7 +30,7 @@
         </div>
         <div class="card my-5">
             <div class="card-header">
-                <h5 class="card-title m-0">评论</h5>
+                <h5 class="card-title m-0">Comment</h5>
             </div>
             <ul class="list-group list-group-flush">
                 @foreach($post->comments as $comment)
