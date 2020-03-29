@@ -18,7 +18,7 @@
     <link href="/css/bootstrap-grid.min.css" rel="stylesheet">
     <link href="/css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="/css/wangEditor.min.css" rel="stylesheet">
-
+    <link rel="icon" type="image/x-icon" href="image/au.ico" />
     <!-- Custom styles for this template -->
     <link href="/css/blog.css" rel="stylesheet">
 </head>
