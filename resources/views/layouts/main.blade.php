@@ -34,7 +34,7 @@
     </div>
 </div>
 
-@include("layouts.footer")
+
 
 
 <!-- Bootstrap core JavaScript
