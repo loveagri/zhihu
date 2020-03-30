@@ -1,4 +1,4 @@
-@extends('layouts.LOrR')
+@extends('layouts.main')
 
 @section('content')
     <div class="container" style="min-height: 100vh;margin-top: 10rem">
