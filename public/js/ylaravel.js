@@ -47,7 +47,7 @@ $('.like-button').click(function (event) {
     var target = $(event.target);
     var current_like = target.attr('like-value');
     var user_id = target.attr('like-user');
-    console.log(current_like);
+
     if (current_like == 1) {
         $.ajax({
             url: "/user/" + user_id + "/unfan",
@@ -57,11 +57,11 @@ $('.like-button').click(function (event) {
             success: function (data) {
                 if (data.error !== 0) {
                     alert(data.msg);
-                    returnl
+                    return
                 }
 
                 target.attr('like-value', 0);
-                target.removeClass('btn-success').addClass('btn-primary').text('关注')
+                target.removeClass('btn-success').addClass('btn-primary').text('Follow')
             }
         })
     } else {
@@ -73,11 +73,11 @@ $('.like-button').click(function (event) {
             success: function (data) {
                 if (data.error !== 0) {
                     alert(data.msg);
-                    returnl
+                    return
                 }
 
                 target.attr('like-value', 1);
-                target.removeClass('btn-primary').addClass('btn-success').text('取消关注');
+                target.removeClass('btn-primary').addClass('btn-success').text('Unfollow');
             }
         })
     }
