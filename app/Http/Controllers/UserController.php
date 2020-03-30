@@ -23,7 +23,7 @@ class UserController extends Controller
         $name = request('name');
         if ($name != $user->name) {
             if (\App\User::where('name', $name)->count() > 0) {
-                return back()->withErrors(array('message' => '用户名称已经被注册'));
+                return back()->withErrors(array('message' => 'username has be used'));
             }
             $user->name = request('name');
         }

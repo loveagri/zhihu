@@ -82,7 +82,7 @@ class User extends Authenticatable
             'user_notice',
             'user_id',
             'notice_id'
-        )->withPivot(['user_id','notice_id']);
+        )->withPivot(['user_id','notice_id'])->orderBy('created_at', 'desc');
     }
 
     public function addNotice($notice)
