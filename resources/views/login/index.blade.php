@@ -1,9 +1,9 @@
 @extends('layouts.LOrR')
 
 @section('content')
-    <div class="container" style="min-height: 100vh;margin-top: 10rem">
-        <h2 class="text-center">Sign in</h2>
-        <form class="w-25 mx-auto" action="/login" method="POST">
+    <div class="container" style="min-height: 100%;margin-top: 7rem">
+        <h2 class="text-center">Welcome to AU Forum</h2>
+        <form class="w-75 mx-auto" action="/login" method="POST" id="login-form">
             @csrf
             <div class="form-group">
                 <label>Email address</label>

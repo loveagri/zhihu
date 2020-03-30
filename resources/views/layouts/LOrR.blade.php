@@ -22,7 +22,7 @@
     <link href="/css/blog.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="body-background">
 
 
 @yield("content")
@@ -39,6 +39,30 @@
 <script src="/js/lib/bootstrap.min.js" crossorigin="anonymous"></script>
 <script src="/js/wangEditor.min.js"></script>
 <script src="/js/ylaravel.js"></script>
+<script>
+
+    function IsPC() {
+        var userAgentInfo = navigator.userAgent;
+        var Agents = ["Android", "iPhone",
+            "SymbianOS", "Windows Phone",
+            "iPad", "iPod"];
+        var flag = true;
+        for (var v = 0; v < Agents.length; v++) {
+            if (userAgentInfo.indexOf(Agents[v]) > 0) {
+                flag = false;
+                break;
+            }
+        }
+        return flag;
+    }
+
+    console.log(IsPC(),999)
+    if (IsPC()){
+        $('#login-form').removeClass('w-75').addClass('w-25')
+    }else{
+        $('#login-form').removeClass('w-25').addClass('w-75')
+    }
+</script>
 
 </body>
 </html>
