@@ -203,3 +203,16 @@ p {
     background: #fff url('/image/au2.jpg') no-repeat fixed top;
     background-size: cover;
 }
+
+.btn-background{
+    background: rgba(0,123,255,.8);
+}
+
+
+.text-color{
+    color:#fff
+}
+
+.h2-text-color{
+    color:#fff;
+}

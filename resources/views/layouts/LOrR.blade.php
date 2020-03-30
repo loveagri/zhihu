@@ -25,7 +25,13 @@
 <body class="body-background">
 
 
+
 @yield("content")
+
+
+
+
+
 
 
 
@@ -43,6 +49,7 @@
 
     function IsPC() {
         var userAgentInfo = navigator.userAgent;
+        console.log(userAgentInfo)
         var Agents = ["Android", "iPhone",
             "SymbianOS", "Windows Phone",
             "iPad", "iPod"];
@@ -56,10 +63,11 @@
         return flag;
     }
 
-    console.log(IsPC(),999)
+console.log(IsPC())
     if (IsPC()){
-        $('#login-form').removeClass('w-75').addClass('w-25')
+        $('#login-form').removeClass('w-75').addClass('w-25');
     }else{
+        $('.container').css('marginTop','2em');
         $('#login-form').removeClass('w-25').addClass('w-75')
     }
 </script>
