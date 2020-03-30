@@ -63,12 +63,14 @@
         return flag;
     }
 
-console.log(IsPC())
+
     if (IsPC()){
         $('#login-form').removeClass('w-75').addClass('w-25');
+        $('.body-background').removeClass('body-background-mobile').addClass('body-background-pc');
     }else{
-        $('.container').css('marginTop','2em');
-        $('#login-form').removeClass('w-25').addClass('w-75')
+        $('.container').css('marginTop','3em');
+        $('#login-form').removeClass('w-25 ').addClass('w-75')
+        $('.body-background').removeClass('body-background-pc').addClass('body-background-mobile')
     }
 </script>
 

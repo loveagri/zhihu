@@ -199,8 +199,14 @@ p {
 }
 
 
-.body-background{
-    background: #fff url('/image/au2-c.jpg') no-repeat fixed top;
+.body-background-mobile{
+    background: #2a5f8d url('/image/au2-mobile.jpg') no-repeat fixed top;
+    /*background-size: contain;*/
+    background-size: 100% 100%;
+}
+
+.body-background-pc{
+    background: #2a5f8d url('/image/au2-pc.jpg') no-repeat fixed top;
     /*background-size: contain;*/
     background-size: 100% 100%;
 }
