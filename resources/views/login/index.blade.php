@@ -1,7 +1,7 @@
 @extends('layouts.LOrR')
 
 @section('content')
-    <div class="container" style="min-height: 100%;margin-top: 7rem">
+    <div class="container" style="min-height: 100%;margin-top: 6rem">
         <h2 class="text-center h2-text-color">Welcome to AU Forum</h2>
         <form class="w-75 mx-auto" action="/login" method="POST" id="login-form">
             @csrf

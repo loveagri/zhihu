@@ -200,8 +200,9 @@ p {
 
 
 .body-background{
-    background: #fff url('/image/au2.jpg') no-repeat fixed top;
-    background-size: cover;
+    background: #fff url('/image/au2-c.jpg') no-repeat fixed top;
+    /*background-size: contain;*/
+    background-size: 100% 100%;
 }
 
 .btn-background{
