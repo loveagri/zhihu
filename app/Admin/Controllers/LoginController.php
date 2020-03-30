@@ -7,11 +7,16 @@ class LoginController extends Controller
 {
     public function index()
     {
+
+        if (\Auth::guard('admin')->check()){
+            return redirect('/admin/posts');
+        }
         return view('admin.login.index');
     }
 
     public function login()
     {
+
         $this->validate(request(), [
             'name' => 'required|min:2',
             'password' => 'required|min:5|max:10',
