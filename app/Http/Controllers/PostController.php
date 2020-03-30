@@ -128,7 +128,7 @@ class PostController extends Controller
         ]);
 
         $query = \request('query');
-        $posts = Post::search($query)->paginate(2);
+        $posts = Post::search($query)->paginate(10);
         return view('post.search', compact('posts','query'));
     }
 }
