@@ -31,15 +31,15 @@
                 <li class="active treeview">
                     <a href="#">
                         <i class="fa fa-dashboard"></i>
-                        <span>系统管理</span>
+                        <span>System management</span>
                         <span class="pull-right-container">
                       <i class="fa fa-angle-left pull-right"></i>
                     </span>
                     </a>
                     <ul class="treeview-menu">
-                        <li><a href="/admin/permissions"><i class="fa fa-circle-o"></i>权限管理</a></li>
-                        <li><a href="/admin/users"><i class="fa fa-circle-o"></i>用户管理</a></li>
-                        <li><a href="/admin/roles"><i class="fa fa-circle-o"></i>角色管理</a></li>
+                        <li><a href="/admin/permissions"><i class="fa fa-circle-o"></i>Permission management</a></li>
+                        <li><a href="/admin/users"><i class="fa fa-circle-o"></i>User management</a></li>
+                        <li><a href="/admin/roles"><i class="fa fa-circle-o"></i>Role management</a></li>
                     </ul>
                 </li>
             @endcan
@@ -47,7 +47,7 @@
                 <li class="treeview">
                     <a href="#">
                         <i class="fa fa-files-o"></i>
-                        <span>文章管理</span>
+                        <span>Post management</span>
                     </a>
                     <ul class="treeview-menu">
                         <li><a href="pages/layout/top-nav.html"><i class="fa fa-circle-o"></i> Top Navigation</a></li>
@@ -62,7 +62,7 @@
                 <li class="treeview">
                     <a href="#">
                         <i class="fa fa-files-o"></i>
-                        <span>专题管理</span>
+                        <span>Topic management</span>
                     </a>
                     <ul class="treeview-menu">
                         <li><a href="pages/layout/top-nav.html"><i class="fa fa-circle-o"></i> Top Navigation</a></li>
@@ -77,7 +77,7 @@
                 <li class="treeview">
                     <a href="#">
                         <i class="fa fa-files-o"></i>
-                        <span>通知管理</span>
+                        <span>Notice management</span>
                     </a>
                     <ul class="treeview-menu">
                         <li><a href="pages/layout/top-nav.html"><i class="fa fa-circle-o"></i> Top Navigation</a></li>

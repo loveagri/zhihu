@@ -6,7 +6,7 @@ $('.post-audit').click(function (event) {
     $.ajax({
         url: '/admin/posts/' + post_id + '/status',
         method: 'POST',
-        data: {'status': status,'_token': $('meta[name="csrf-token"]').attr('content')},
+        data: {'status': status, '_token': $('meta[name="csrf-token"]').attr('content')},
         dataType: 'json',
         success: function (data) {
             if (data.error != 0) {
@@ -20,8 +20,8 @@ $('.post-audit').click(function (event) {
 });
 
 
-$(".resource-delete").click(function(event){
-    if (confirm("确定执行删除操作么?") === false) {
+$(".resource-delete").click(function (event) {
+    if (confirm("delete?") === false) {
         return;
     }
 
@@ -31,9 +31,9 @@ $(".resource-delete").click(function(event){
     $.ajax({
         url: url,
         method: "POST",
-        data: {"_method": 'DELETE','_token': $('meta[name="csrf-token"]').attr('content')},
+        data: {"_method": 'DELETE', '_token': $('meta[name="csrf-token"]').attr('content')},
         dataType: "json",
-        success: function(data) {
+        success: function (data) {
             if (data.error !== 0) {
                 alert(data.msg);
                 return;

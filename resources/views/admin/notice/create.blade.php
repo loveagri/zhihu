@@ -13,7 +13,7 @@
                         <!-- /.box-header -->
                         <div class="box box-primary">
                             <div class="box-header with-border">
-                                <h3 class="box-title">增加通知</h3>
+                                <h3 class="box-title">Add notice</h3>
                             </div>
                             <!-- /.box-header -->
                             <!-- form start -->
@@ -21,19 +21,19 @@
                                 @csrf
                                 <div class="box-body">
                                     <div class="form-group">
-                                        <label for="exampleInputEmail1">标题</label>
+                                        <label for="exampleInputEmail1">Title</label>
                                         <input type="text" class="form-control" name="title">
                                     </div>
                                 </div>
                                 <div class="box-body">
                                     <div class="form-group">
-                                        <label for="exampleInputEmail1">内容</label>
+                                        <label for="exampleInputEmail1">Content</label>
                                         <textarea class="form-control" name="content"></textarea>
                                     </div>
                                 </div>
                                 <!-- /.box-body -->
                                 <div class="box-footer">
-                                    <button type="submit" class="btn btn-primary">提交</button>
+                                    <button type="submit" class="btn btn-primary">Submit</button>
                                 </div>
                             </form>
                         </div>

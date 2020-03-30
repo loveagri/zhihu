@@ -13,7 +13,7 @@
                         <!-- /.box-header -->
                         <div class="box box-primary">
                             <div class="box-header with-border">
-                                <h3 class="box-title">增加权限</h3>
+                                <h3 class="box-title">Add permission</h3>
                             </div>
                             <!-- /.box-header -->
                             <!-- form start -->
@@ -21,19 +21,19 @@
                                 @csrf
                                 <div class="box-body">
                                     <div class="form-group">
-                                        <label >权限名</label>
+                                        <label >Permission</label>
                                         <input type="text" class="form-control" name="name">
                                     </div>
                                 </div>
                                 <div class="box-body">
                                     <div class="form-group">
-                                        <label>描述</label>
+                                        <label>Description</label>
                                         <input type="text" class="form-control" name="description">
                                     </div>
                                 </div>
                                 <!-- /.box-body -->
                                 <div class="box-footer">
-                                    <button type="submit" class="btn btn-primary">提交</button>
+                                    <button type="submit" class="btn btn-primary">Submit</button>
                                 </div>
                             </form>
                         </div>

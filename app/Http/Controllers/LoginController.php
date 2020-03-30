@@ -26,7 +26,7 @@ class LoginController extends Controller
             return redirect('/posts');
         }
 
-        return \Redirect::back()->withErrors('邮箱密码不匹配');
+        return \Redirect::back()->withErrors('Email not match');
     }
 
     public function logout()

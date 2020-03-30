@@ -58,7 +58,7 @@ class UserController extends Controller
     {
         $me = \Auth::user();
         \App\Fan::firstOrCreate(['fan_id' => $me->id, 'star_id' => $user->id]);
-        return [
+        return [w
             'error' => 0,
             'msg' => ''
         ];

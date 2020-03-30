@@ -13,7 +13,7 @@
                         <!-- /.box-header -->
                         <div class="box box-primary">
                             <div class="box-header with-border">
-                                <h3 class="box-title">增加角色</h3>
+                                <h3 class="box-title">Add role</h3>
                             </div>
                             <!-- /.box-header -->
                             <!-- form start -->
@@ -21,19 +21,19 @@
                                 @csrf
                                 <div class="box-body">
                                     <div class="form-group">
-                                        <label for="exampleInputEmail1">角色名</label>
+                                        <label for="exampleInputEmail1">Role name</label>
                                         <input type="text" class="form-control" name="name">
                                     </div>
                                 </div>
                                 <div class="box-body">
                                     <div class="form-group">
-                                        <label for="exampleInputEmail1">描述</label>
+                                        <label for="exampleInputEmail1">Description</label>
                                         <input type="text" class="form-control" name="description">
                                     </div>
                                 </div>
                                 <!-- /.box-body -->
                                 <div class="box-footer">
-                                    <button type="submit" class="btn btn-primary">提交</button>
+                                    <button type="submit" class="btn btn-primary">Submit</button>
                                 </div>
                             </form>
                         </div>

@@ -13,7 +13,7 @@
                         <!-- /.box-header -->
                         <div class="box box-primary">
                             <div class="box-header with-border">
-                                <h3 class="box-title">增加用户</h3>
+                                <h3 class="box-title">Add user</h3>
                             </div>
                             <!-- /.box-header -->
                             <!-- form start -->
@@ -31,7 +31,7 @@
                                 </div>
                                 <!-- /.box-body -->
                                 <div class="box-footer">
-                                    <button type="submit" class="btn btn-primary">提交</button>
+                                    <button type="submit" class="btn btn-primary">Submit</button>
                                 </div>
                             </form>
                         </div>
