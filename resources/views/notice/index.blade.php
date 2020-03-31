@@ -10,7 +10,7 @@
                         <h5 class="mb-1"><span href="#">{{$notice->title}}</span></h5>
                         <small>{{$notice->created_at->toFormattedDateString()}} </small>
                     </div>
-                    <p class="mt-2">{!! str_limit($notice->content,100,'...') !!}</p>
+                    <p class="mt-2">{!! str_limit($notice->content,1000,'...') !!}</p>
                 </div>
             @endforeach
         </div>
