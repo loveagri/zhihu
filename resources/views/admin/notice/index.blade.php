@@ -23,9 +23,9 @@
                                     <th>Notice name</th>
                                     <th>operation</th>
                                 </tr>
-                               @foreach ($notices as $notice)
+                               @foreach ($notices as $key => $notice)
                                    <tr>
-                                       <td>{{$notice->id}}</td>
+                                       <td>{{$key+1}}</td>
                                        <td>{{$notice->title}}</td>
                                        <td>{!! str_limit($notice->content,100,'...') !!}</td>
                                    </tr>
