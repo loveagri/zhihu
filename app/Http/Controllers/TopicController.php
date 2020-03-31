@@ -15,7 +15,7 @@ class TopicController extends Controller
 
         $posts = $topic->posts()->orderBy('created_at', 'desc')->take(10)->get();
 
-        $myposts = Post::authorBy(\Auth::id())->topicNotBy($topic->id)->get();
+        $myposts = Post::authorBy(\Auth::id())->topicNotBy($topic->id)->orderBy('created_at', 'desc')->get();
         return view('topic.show', compact('topic', 'posts', 'myposts'));
     }
 
