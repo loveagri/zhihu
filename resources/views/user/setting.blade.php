@@ -13,7 +13,7 @@
             <div class="form-group row">
                 <label class="col-sm-2 col-form-label" >Avatar:</label>
                 <div class="col-sm-4 row align-items-center">
-                    <input type="file" id="avatar" class="form-control-file  btn-success" value="username" name="avatar" style="margin-left: 0.8rem;border-radius: 0.2rem">
+                    <input type="file" id="avatar" class="form-control-file  btn-success" value="username" name="avatar" style="margin-left: 0.8rem;border-radius: 0.2rem;min-width: 20rem">
                     <img src="{{$me->avatar}}" alt="" class="img-rounded mt-4 preview_img" style="border-radius:500px;" >
                 </div>
             </div>
