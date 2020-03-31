@@ -33,6 +33,7 @@
 
                                 </tbody>
                             </table>
+                            {{$notices->links()}}
                         </div>
                     </div>
                 </div>
