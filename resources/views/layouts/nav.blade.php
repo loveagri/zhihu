@@ -26,7 +26,7 @@
                 </ul>
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item dropdown ml-auto row align-items-center">
-                        <img src="https://randomuser.me/api/portraits/women/17.jpg" alt="" class="img-rounded"
+                        <img src="{{\Auth::user()->avatar ? : 'https://randomuser.me/api/portraits/women/17.jpg'}}" alt="" class="img-rounded"
                              style="border-radius:500px; height: 30px">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
