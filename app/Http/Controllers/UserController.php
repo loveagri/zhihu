@@ -29,8 +29,8 @@ class UserController extends Controller
         }
 
         if ($request->file('avatar')) {
-            $path = $request->file('avatar')->storePublicly(md5(\Auth::id() . time()));
-            $user->avatar = "/storage/" . $path;
+            $path = $request->file('avatar')->storePublicly('public/'.md5(\Auth::id() . time()));
+            $user->avatar = "/storage/" . trim($path,'public');
         }
 
         $user->save();
