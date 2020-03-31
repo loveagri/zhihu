@@ -14,7 +14,7 @@
     <!-- Ionicons -->
     <link rel="stylesheet" href="/adminlte/bower_components/Ionicons/css/ionicons.min.css">
     <!-- Theme style -->
-    <link rel="icon" type="image/x-icon" href="image/au.ico" />
+    <link rel="icon" type="image/x-icon" href="/image/au.ico" />
     <link rel="stylesheet" href="/adminlte/dist/css/AdminLTE.min.css">
     <!-- AdminLTE Skins. Choose a skin from the css/skins
          folder instead of downloading all of them to reduce the load. -->
