@@ -64,14 +64,14 @@
     }
 
 
-    // if (IsPC()){
-    //     $('#login-form').removeClass('w-75').addClass('w-25');
-    //     $('.body-background').removeClass('body-background-mobile').addClass('body-background-pc');
-    // }else{
+    if (IsPC()){
+        $('#login-form').removeClass('w-75').addClass('w-25');
+        $('.body-background').removeClass('body-background-mobile').addClass('body-background-pc');
+    }else{
         $('.container').css('marginTop','3em');
         $('#login-form').removeClass('w-25 ').addClass('w-75')
         $('.body-background').removeClass('body-background-pc').addClass('body-background-mobile')
-    // }
+    }
 </script>
 
 </body>
