@@ -37,7 +37,6 @@ return [
         'stack' => [
             'driver' => 'stack',
             'channels' => ['daily'],
-            'path' => '/tmp/larael.log',
             'ignore_exceptions' => false,
         ],
 
