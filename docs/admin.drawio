@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-04-14T09:33:54.503Z" agent="5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36" etag="566t0pxHHIyur6vK1iEI" version="12.9.8" type="github">
+<mxfile host="app.diagrams.net" modified="2020-04-14T09:34:43.563Z" agent="5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36" etag="gUh1mar-k1xggqYitB8o" version="12.9.8" type="github">
   <diagram name="Page-1" id="c7558073-3199-34d8-9f00-42111426c3f3">
     <mxGraphModel dx="2012" dy="-429" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="826" pageHeight="1169" background="#ffffff" math="0" shadow="0">
       <root>
@@ -265,8 +265,8 @@
         <mxCell id="a9a8mxuT70NmRNff5WwH-102" value="Update user status column" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="1" vertex="1">
           <mxGeometry x="415" y="2185" width="160" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="a9a8mxuT70NmRNff5WwH-104" value="Judge user" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="1" vertex="1">
-          <mxGeometry x="105" y="2185" width="70" height="20" as="geometry" />
+        <mxCell id="a9a8mxuT70NmRNff5WwH-104" value="View users" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="1" vertex="1">
+          <mxGeometry x="99" y="2200" width="70" height="20" as="geometry" />
         </mxCell>
         <mxCell id="a9a8mxuT70NmRNff5WwH-106" value="User request" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="1" vertex="1">
           <mxGeometry x="89" y="2084.5" width="80" height="20" as="geometry" />
