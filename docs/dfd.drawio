@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-04-14T09:01:56.221Z" agent="5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36" etag="JazpqECt5iQ8JuE12CD4" version="12.9.8" type="github">
+<mxfile host="app.diagrams.net" modified="2020-04-14T09:02:22.066Z" agent="5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36" etag="cqUyWoN6csXlO4dT7_Rl" version="12.9.8" type="github">
   <diagram name="Page-1" id="c7558073-3199-34d8-9f00-42111426c3f3">
     <mxGraphModel dx="2012" dy="691" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="826" pageHeight="1169" background="#ffffff" math="0" shadow="0">
       <root>
@@ -438,10 +438,10 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="8fqxx7D-VvN7YInsf59q-311" value="Notice page request" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="1" vertex="1">
-          <mxGeometry x="-180" y="1140" width="120" height="20" as="geometry" />
+          <mxGeometry x="-160" y="1140" width="120" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="8fqxx7D-VvN7YInsf59q-318" value="Notice information" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="1" vertex="1">
-          <mxGeometry x="-20" y="1555" width="110" height="20" as="geometry" />
+        <mxCell id="8fqxx7D-VvN7YInsf59q-318" value="Notice items" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="1" vertex="1">
+          <mxGeometry x="-15" y="1570" width="80" height="20" as="geometry" />
         </mxCell>
         <mxCell id="8fqxx7D-VvN7YInsf59q-322" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=0;entryDx=0;entryDy=0;strokeColor=#990000;strokeWidth=2;" parent="1" source="8fqxx7D-VvN7YInsf59q-319" target="8fqxx7D-VvN7YInsf59q-152" edge="1">
           <mxGeometry relative="1" as="geometry">
