@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2020-04-14T09:34:43.563Z" agent="5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36" etag="gUh1mar-k1xggqYitB8o" version="12.9.8" type="github">
+<mxfile host="app.diagrams.net" modified="2020-04-14T09:39:42.322Z" agent="5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36" etag="GapbIbi2UvMoZbe975Hn" version="12.9.8" type="github">
   <diagram name="Page-1" id="c7558073-3199-34d8-9f00-42111426c3f3">
-    <mxGraphModel dx="2012" dy="-429" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="826" pageHeight="1169" background="#ffffff" math="0" shadow="0">
+    <mxGraphModel dx="2012" dy="-478" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="826" pageHeight="1169" background="#ffffff" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -212,8 +212,8 @@
         <mxCell id="a9a8mxuT70NmRNff5WwH-80" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#990000;strokeWidth=2;" parent="1" source="a9a8mxuT70NmRNff5WwH-49" target="a9a8mxuT70NmRNff5WwH-43" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="a9a8mxuT70NmRNff5WwH-81" value="Post information" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="1" vertex="1">
-          <mxGeometry x="445" y="1890" width="100" height="20" as="geometry" />
+        <mxCell id="a9a8mxuT70NmRNff5WwH-81" value="Post items" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="1" vertex="1">
+          <mxGeometry x="453" y="1897.5" width="70" height="20" as="geometry" />
         </mxCell>
         <mxCell id="UsTytMOdF4SKLA_qxMAS-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=0.198;entryY=0.006;entryDx=0;entryDy=0;entryPerimeter=0;strokeColor=#990000;strokeWidth=2;" edge="1" parent="1" source="a9a8mxuT70NmRNff5WwH-85" target="a9a8mxuT70NmRNff5WwH-42">
           <mxGeometry relative="1" as="geometry" />
@@ -250,8 +250,8 @@
             <mxPoint x="560" y="1833" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="a9a8mxuT70NmRNff5WwH-97" value="Admin information" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="1" vertex="1">
-          <mxGeometry x="433" y="1807.5" width="110" height="20" as="geometry" />
+        <mxCell id="a9a8mxuT70NmRNff5WwH-97" value="Admin username&lt;br&gt;&amp;nbsp;and password" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="1" vertex="1">
+          <mxGeometry x="433" y="1802.5" width="110" height="30" as="geometry" />
         </mxCell>
         <mxCell id="a9a8mxuT70NmRNff5WwH-99" value="admin username and password" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="1" vertex="1">
           <mxGeometry x="30" y="1807.5" width="180" height="20" as="geometry" />
@@ -313,8 +313,8 @@
         <mxCell id="a9a8mxuT70NmRNff5WwH-132" value="add notice" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="1" vertex="1">
           <mxGeometry x="110" y="2610" width="70" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="a9a8mxuT70NmRNff5WwH-133" value="Topic information" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="1" vertex="1">
-          <mxGeometry x="434" y="2297.5" width="110" height="20" as="geometry" />
+        <mxCell id="a9a8mxuT70NmRNff5WwH-133" value="Topic items" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="1" vertex="1">
+          <mxGeometry x="449" y="2297.5" width="80" height="20" as="geometry" />
         </mxCell>
         <mxCell id="UsTytMOdF4SKLA_qxMAS-2" value="Show notice items" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
           <mxGeometry x="-5" y="2559" width="110" height="20" as="geometry" />
