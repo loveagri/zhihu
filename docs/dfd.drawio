@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-04-14T09:08:30.571Z" agent="5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36" etag="f9LxTjv4WMTrnvQzQnzZ" version="12.9.8" type="github">
+<mxfile host="app.diagrams.net" modified="2020-04-14T09:37:26.712Z" agent="5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36" etag="9st6DNOkK1NlbkvMv-61" version="12.9.8" type="github">
   <diagram name="Page-1" id="c7558073-3199-34d8-9f00-42111426c3f3">
     <mxGraphModel dx="2520" dy="987" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="826" pageHeight="1169" background="#ffffff" math="0" shadow="0">
       <root>
@@ -171,8 +171,8 @@
         <mxCell id="8fqxx7D-VvN7YInsf59q-171" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center ; text-decoration: underline&quot;&gt;10.0&lt;/p&gt;&lt;hr&gt;&lt;strong&gt;View&lt;/strong&gt;&lt;p style=&quot;margin: 0px ; margin-left: 8px&quot;&gt;Post Detail&lt;/p&gt;" style="verticalAlign=middle;align=center;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;rounded=1;fontStyle=1;strokeWidth=3;fillColor=#E6FFCC" parent="1" vertex="1">
           <mxGeometry x="481" y="1510" width="110" height="65" as="geometry" />
         </mxCell>
-        <mxCell id="8fqxx7D-VvN7YInsf59q-174" value="Post information" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="1" vertex="1">
-          <mxGeometry x="550" y="1455" width="100" height="20" as="geometry" />
+        <mxCell id="8fqxx7D-VvN7YInsf59q-174" value="Post items" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="1" vertex="1">
+          <mxGeometry x="565" y="1455" width="70" height="20" as="geometry" />
         </mxCell>
         <mxCell id="8fqxx7D-VvN7YInsf59q-294" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#990000;strokeWidth=2;" parent="1" source="8fqxx7D-VvN7YInsf59q-176" target="8fqxx7D-VvN7YInsf59q-181" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -219,8 +219,8 @@
         <mxCell id="8fqxx7D-VvN7YInsf59q-208" value="Like or unlike" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="1" vertex="1">
           <mxGeometry x="566" y="1669" width="90" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="8fqxx7D-VvN7YInsf59q-209" value="Update like or unlike information" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="1" vertex="1">
-          <mxGeometry x="711" y="1649" width="190" height="20" as="geometry" />
+        <mxCell id="8fqxx7D-VvN7YInsf59q-209" value="Update like or unlike item" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="1" vertex="1">
+          <mxGeometry x="731" y="1649" width="150" height="20" as="geometry" />
         </mxCell>
         <mxCell id="zKRomgQnYcrpxHjStRtB-55" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#990000;strokeWidth=2;" parent="1" source="8fqxx7D-VvN7YInsf59q-210" target="VDi6t9ga21O5KA3M_4X4-98" edge="1">
           <mxGeometry relative="1" as="geometry">
