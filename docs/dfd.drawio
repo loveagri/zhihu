@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-04-20T09:28:26.556Z" agent="5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.113 Safari/537.36" etag="K9bM6JqjX2P-nbQuCSZO" version="12.9.12" type="github">
+<mxfile host="app.diagrams.net" modified="2020-04-20T09:28:52.149Z" agent="5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.113 Safari/537.36" etag="5NzvwoIkQJte2Qr-87qq" version="12.9.12" type="github">
   <diagram name="Page-1" id="c7558073-3199-34d8-9f00-42111426c3f3">
     <mxGraphModel dx="2012" dy="763" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="826" pageHeight="1169" background="#ffffff" math="0" shadow="0">
       <root>
@@ -216,8 +216,8 @@
         <mxCell id="8fqxx7D-VvN7YInsf59q-204" value="Like nums" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="1" vertex="1">
           <mxGeometry x="675" y="1520" width="70" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="8fqxx7D-VvN7YInsf59q-207" value="Comment&amp;nbsp; ltem" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="1" vertex="1">
-          <mxGeometry x="357" y="1770" width="100" height="20" as="geometry" />
+        <mxCell id="8fqxx7D-VvN7YInsf59q-207" value="Comment&amp;nbsp; list" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="1" vertex="1">
+          <mxGeometry x="362" y="1770" width="90" height="20" as="geometry" />
         </mxCell>
         <mxCell id="8fqxx7D-VvN7YInsf59q-208" value="Like or unlike&amp;nbsp;&lt;br&gt;request" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="1" vertex="1">
           <mxGeometry x="566" y="1635" width="90" height="30" as="geometry" />
