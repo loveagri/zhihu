@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2020-04-20T04:46:15.565Z" agent="5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.113 Safari/537.36" etag="o-m5XyOGu0EFQiYmKyz_" version="12.9.12" type="github">
+<mxfile host="app.diagrams.net" modified="2020-04-20T07:42:36.991Z" agent="5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.113 Safari/537.36" etag="tMu9Z2b1i55eiPxA9v8N" version="12.9.12" type="github">
   <diagram name="Page-1" id="c7558073-3199-34d8-9f00-42111426c3f3">
-    <mxGraphModel dx="2012" dy="763" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="826" pageHeight="1169" background="#ffffff" math="0" shadow="0">
+    <mxGraphModel dx="2012" dy="714" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="826" pageHeight="1169" background="#ffffff" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -87,8 +87,8 @@
         <mxCell id="VDi6t9ga21O5KA3M_4X4-102" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center ; text-decoration: underline&quot;&gt;&lt;strong&gt;1.1&lt;/strong&gt;&lt;/p&gt;&lt;hr&gt;&lt;p style=&quot;margin: 0px ; margin-left: 8px&quot;&gt;Sign up&lt;/p&gt;" style="verticalAlign=middle;align=center;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;rounded=1;fontStyle=1;strokeWidth=3;fillColor=#E6FFCC" parent="1" vertex="1">
           <mxGeometry x="490" y="380" width="110" height="65" as="geometry" />
         </mxCell>
-        <mxCell id="VDi6t9ga21O5KA3M_4X4-106" value="Student&amp;nbsp; nickname,&lt;br&gt;emal, password" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="1" vertex="1">
-          <mxGeometry x="65" y="360" width="120" height="30" as="geometry" />
+        <mxCell id="VDi6t9ga21O5KA3M_4X4-106" value="Nickname,&lt;br&gt;email, password" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="1" vertex="1">
+          <mxGeometry x="75" y="360" width="100" height="30" as="geometry" />
         </mxCell>
         <mxCell id="8fqxx7D-VvN7YInsf59q-137" value="" style="group" parent="1" vertex="1" connectable="0">
           <mxGeometry x="780" y="387.5" width="172" height="50" as="geometry" />
@@ -121,7 +121,7 @@
         <mxCell id="8fqxx7D-VvN7YInsf59q-140" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center ; text-decoration: underline&quot;&gt;&lt;strong&gt;2.1&lt;/strong&gt;&lt;/p&gt;&lt;hr&gt;&lt;p style=&quot;margin: 0px ; margin-left: 8px&quot;&gt;Sign in&lt;/p&gt;" style="verticalAlign=middle;align=center;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;rounded=1;fontStyle=1;strokeWidth=3;fillColor=#E6FFCC" parent="1" vertex="1">
           <mxGeometry x="177" y="530" width="110" height="65" as="geometry" />
         </mxCell>
-        <mxCell id="8fqxx7D-VvN7YInsf59q-143" value="Student&amp;nbsp;&lt;br&gt;emal, password" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="1" vertex="1">
+        <mxCell id="8fqxx7D-VvN7YInsf59q-143" value="Student&amp;nbsp;&lt;br&gt;email, password" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="1" vertex="1">
           <mxGeometry x="128" y="445" width="100" height="30" as="geometry" />
         </mxCell>
         <mxCell id="8fqxx7D-VvN7YInsf59q-146" value="&lt;span style=&quot;color: rgba(0 , 0 , 0 , 0) ; font-family: monospace ; font-size: 0px&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22Student%26amp%3Bnbsp%3B%26lt%3Bbr%26gt%3Bemal%2C%20password%22%20style%3D%22text%3Bhtml%3D1%3Balign%3Dcenter%3BverticalAlign%3Dmiddle%3Bresizable%3D0%3Bpoints%3D%5B%5D%3Bautosize%3D1%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22171%22%20y%3D%221010%22%20width%3D%22100%22%20height%3D%2230%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;&lt;span style=&quot;color: rgba(0 , 0 , 0 , 0) ; font-family: monospace ; font-size: 0px&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22Student%26amp%3Bnbsp%3B%26lt%3Bbr%26gt%3Bemal%2C%20password%22%20style%3D%22text%3Bhtml%3D1%3Balign%3Dcenter%3BverticalAlign%3Dmiddle%3Bresizable%3D0%3Bpoints%3D%5B%5D%3Bautosize%3D1%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22171%22%20y%3D%221010%22%20width%3D%22100%22%20height%3D%2230%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="1" vertex="1">
@@ -235,8 +235,8 @@
         <mxCell id="8fqxx7D-VvN7YInsf59q-210" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center ; text-decoration: underline&quot;&gt;3.0&lt;/p&gt;&lt;hr&gt;&lt;p style=&quot;margin: 0px ; margin-left: 8px&quot;&gt;Set personal&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 8px&quot;&gt;information&lt;/p&gt;" style="verticalAlign=middle;align=center;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;rounded=1;fontStyle=1;strokeWidth=3;fillColor=#E6FFCC" parent="1" vertex="1">
           <mxGeometry x="447" y="630" width="110" height="65" as="geometry" />
         </mxCell>
-        <mxCell id="8fqxx7D-VvN7YInsf59q-216" value="Add student&amp;nbsp; nickname,&lt;br&gt;emal, password" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="1" vertex="1">
-          <mxGeometry x="621" y="375" width="140" height="30" as="geometry" />
+        <mxCell id="8fqxx7D-VvN7YInsf59q-216" value="Validated&amp;nbsp; nickname,&lt;br&gt;email, password" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="1" vertex="1">
+          <mxGeometry x="626" y="375" width="130" height="30" as="geometry" />
         </mxCell>
         <mxCell id="zKRomgQnYcrpxHjStRtB-62" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#990000;strokeWidth=2;" parent="1" source="8fqxx7D-VvN7YInsf59q-217" target="VDi6t9ga21O5KA3M_4X4-98" edge="1">
           <mxGeometry relative="1" as="geometry">
@@ -400,7 +400,7 @@
           <mxGeometry x="872" y="1120" width="80" height="20" as="geometry" />
         </mxCell>
         <mxCell id="8fqxx7D-VvN7YInsf59q-285" value="Fan num" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="1" vertex="1">
-          <mxGeometry x="766" y="1030" width="60" height="20" as="geometry" />
+          <mxGeometry x="745" y="1019.5" width="60" height="20" as="geometry" />
         </mxCell>
         <mxCell id="8fqxx7D-VvN7YInsf59q-291" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#990000;strokeWidth=2;" parent="1" source="8fqxx7D-VvN7YInsf59q-191" target="8fqxx7D-VvN7YInsf59q-171" edge="1">
           <mxGeometry relative="1" as="geometry">
@@ -486,11 +486,11 @@
         <mxCell id="zKRomgQnYcrpxHjStRtB-1" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center ; text-decoration: underline&quot;&gt;&lt;strong&gt;1.0&lt;/strong&gt;&lt;/p&gt;&lt;hr&gt;&lt;p style=&quot;margin: 0px ; margin-left: 8px&quot;&gt;Check infomation&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 8px&quot;&gt;&amp;nbsp; validity or not&lt;/p&gt;" style="verticalAlign=middle;align=center;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;rounded=1;fontStyle=1;strokeWidth=3;fillColor=#E6FFCC" parent="1" vertex="1">
           <mxGeometry x="232" y="380" width="110" height="65" as="geometry" />
         </mxCell>
-        <mxCell id="zKRomgQnYcrpxHjStRtB-14" value="no validity" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="1" vertex="1">
-          <mxGeometry x="70" y="410" width="70" height="20" as="geometry" />
+        <mxCell id="zKRomgQnYcrpxHjStRtB-14" value="validated error message" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="1" vertex="1">
+          <mxGeometry x="35" y="410" width="140" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="zKRomgQnYcrpxHjStRtB-16" value="Validity" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="1" vertex="1">
-          <mxGeometry x="388" y="390" width="50" height="20" as="geometry" />
+        <mxCell id="zKRomgQnYcrpxHjStRtB-16" value="Validated nickname,&lt;br&gt;email, password" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="1" vertex="1">
+          <mxGeometry x="357" y="375" width="120" height="30" as="geometry" />
         </mxCell>
         <mxCell id="zKRomgQnYcrpxHjStRtB-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1.018;entryY=0.646;entryDx=0;entryDy=0;entryPerimeter=0;strokeColor=#990000;strokeWidth=2;" parent="1" source="zKRomgQnYcrpxHjStRtB-22" target="8fqxx7D-VvN7YInsf59q-140" edge="1">
           <mxGeometry relative="1" as="geometry">
@@ -506,8 +506,8 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="zKRomgQnYcrpxHjStRtB-22" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center ; text-decoration: underline&quot;&gt;2.0&lt;/p&gt;&lt;hr&gt;&lt;p style=&quot;margin: 0px ; margin-left: 8px&quot;&gt;Check infomation&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 8px&quot;&gt;&amp;nbsp; validity or not&lt;/p&gt;" style="verticalAlign=middle;align=center;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;rounded=1;fontStyle=1;strokeWidth=3;fillColor=#E6FFCC" parent="1" vertex="1">
-          <mxGeometry x="420" y="467.5" width="110" height="65" as="geometry" />
+        <mxCell id="zKRomgQnYcrpxHjStRtB-22" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center ; text-decoration: underline&quot;&gt;2.0&lt;/p&gt;&lt;hr&gt;&lt;p style=&quot;margin: 0px ; margin-left: 8px&quot;&gt;Check student&#39;s email&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 8px&quot;&gt;and password valid&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 8px&quot;&gt;or not&lt;/p&gt;" style="verticalAlign=middle;align=center;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;rounded=1;fontStyle=1;strokeWidth=3;fillColor=#E6FFCC" parent="1" vertex="1">
+          <mxGeometry x="420" y="467.5" width="140" height="82.5" as="geometry" />
         </mxCell>
         <mxCell id="zKRomgQnYcrpxHjStRtB-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#990000;strokeWidth=2;" parent="1" source="8fqxx7D-VvN7YInsf59q-131" target="zKRomgQnYcrpxHjStRtB-22" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -515,8 +515,8 @@
         <mxCell id="zKRomgQnYcrpxHjStRtB-25" value="Username and password" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="1" vertex="1">
           <mxGeometry x="621" y="500" width="150" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="zKRomgQnYcrpxHjStRtB-27" value="Response fail login tip" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="1" vertex="1">
-          <mxGeometry x="42" y="510" width="130" height="20" as="geometry" />
+        <mxCell id="zKRomgQnYcrpxHjStRtB-27" value="Response fail login message" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="1" vertex="1">
+          <mxGeometry x="22" y="510" width="170" height="20" as="geometry" />
         </mxCell>
         <mxCell id="zKRomgQnYcrpxHjStRtB-31" value="Validay" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="1" vertex="1">
           <mxGeometry x="360" y="575" width="50" height="20" as="geometry" />
