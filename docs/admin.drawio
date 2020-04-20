@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-04-20T09:29:59.316Z" agent="5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.113 Safari/537.36" etag="hLLemNjVp3zdCcPBJT0r" version="12.9.12" type="github">
+<mxfile host="app.diagrams.net" modified="2020-04-20T09:30:58.643Z" agent="5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.113 Safari/537.36" etag="EyF6z3lJC_XHjFBeV3UO" version="12.9.12" type="github">
   <diagram name="Page-1" id="c7558073-3199-34d8-9f00-42111426c3f3">
     <mxGraphModel dx="2012" dy="-455" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="826" pageHeight="1169" background="#ffffff" math="0" shadow="0">
       <root>
@@ -169,8 +169,8 @@
         <mxCell id="a9a8mxuT70NmRNff5WwH-74" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center ; text-decoration: underline&quot;&gt;8.0&lt;/p&gt;&lt;hr&gt;&lt;strong&gt;Query notice items&lt;br&gt;from notices DB&lt;br&gt;&lt;/strong&gt;" style="verticalAlign=middle;align=center;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;rounded=1;fontStyle=1;strokeWidth=3;fillColor=#E6FFCC" parent="1" vertex="1">
           <mxGeometry x="290" y="2390" width="120" height="65" as="geometry" />
         </mxCell>
-        <mxCell id="a9a8mxuT70NmRNff5WwH-76" value="Created a topic item" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="1" vertex="1">
-          <mxGeometry x="490" y="2290" width="120" height="20" as="geometry" />
+        <mxCell id="a9a8mxuT70NmRNff5WwH-76" value="Created a topic&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="1" vertex="1">
+          <mxGeometry x="500" y="2290" width="100" height="20" as="geometry" />
         </mxCell>
         <mxCell id="a9a8mxuT70NmRNff5WwH-128" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.429;entryY=1.11;entryDx=0;entryDy=0;entryPerimeter=0;strokeColor=#990000;strokeWidth=2;" parent="1" source="a9a8mxuT70NmRNff5WwH-79" target="a9a8mxuT70NmRNff5WwH-50" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -181,8 +181,8 @@
         <mxCell id="a9a8mxuT70NmRNff5WwH-80" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#990000;strokeWidth=2;" parent="1" source="a9a8mxuT70NmRNff5WwH-49" target="a9a8mxuT70NmRNff5WwH-43" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="a9a8mxuT70NmRNff5WwH-81" value="Post items" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="1" vertex="1">
-          <mxGeometry x="453" y="1897.5" width="70" height="20" as="geometry" />
+        <mxCell id="a9a8mxuT70NmRNff5WwH-81" value="Post list" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="1" vertex="1">
+          <mxGeometry x="458" y="1897.5" width="60" height="20" as="geometry" />
         </mxCell>
         <mxCell id="UsTytMOdF4SKLA_qxMAS-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;strokeColor=#990000;strokeWidth=2;" parent="1" source="a9a8mxuT70NmRNff5WwH-85" target="a9a8mxuT70NmRNff5WwH-42" edge="1">
           <mxGeometry relative="1" as="geometry">
@@ -253,8 +253,8 @@
         <mxCell id="a9a8mxuT70NmRNff5WwH-115" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#990000;strokeWidth=2;" parent="1" source="a9a8mxuT70NmRNff5WwH-69" target="a9a8mxuT70NmRNff5WwH-74" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="a9a8mxuT70NmRNff5WwH-116" value="Added notice item" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="1" vertex="1">
-          <mxGeometry x="469" y="2510" width="110" height="20" as="geometry" />
+        <mxCell id="a9a8mxuT70NmRNff5WwH-116" value="Created notice&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="1" vertex="1">
+          <mxGeometry x="474" y="2510" width="100" height="20" as="geometry" />
         </mxCell>
         <mxCell id="a9a8mxuT70NmRNff5WwH-129" value="Browsing topic request" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="1" vertex="1">
           <mxGeometry x="80" y="2130" width="140" height="20" as="geometry" />
@@ -268,8 +268,8 @@
         <mxCell id="a9a8mxuT70NmRNff5WwH-132" value="adding notice request" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="1" vertex="1">
           <mxGeometry y="2520" width="130" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="a9a8mxuT70NmRNff5WwH-133" value="Topic items" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="1" vertex="1">
-          <mxGeometry x="453" y="2130" width="80" height="20" as="geometry" />
+        <mxCell id="a9a8mxuT70NmRNff5WwH-133" value="Topic list" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="1" vertex="1">
+          <mxGeometry x="463" y="2130" width="60" height="20" as="geometry" />
         </mxCell>
         <mxCell id="UsTytMOdF4SKLA_qxMAS-2" value="notice items" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="1" vertex="1">
           <mxGeometry x="50" y="2447.5" width="80" height="20" as="geometry" />
@@ -312,8 +312,8 @@
         <mxCell id="i3z4OGd6oEZyoyiny_UR-12" value="Deleting a topic request" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
           <mxGeometry x="-50" y="2335" width="140" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="i3z4OGd6oEZyoyiny_UR-13" value="deleted a topic item" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
-          <mxGeometry x="525" y="2340" width="120" height="20" as="geometry" />
+        <mxCell id="i3z4OGd6oEZyoyiny_UR-13" value="deleted a topic&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="535" y="2340" width="100" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
